@@ -1,0 +1,42 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /apps/common/software/Miniconda3/25.11.1-1/condabin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda-env
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/activate
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/deactivate
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.sh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/fish/conf.d/conda.fish
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/Conda.psm1
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/conda-hook.ps1
+no change     /apps/common/software/Miniconda3/25.11.1-1/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.csh
+no change     /home/vikmuru/.bashrc
+No action taken.
+SLURM_SUBMIT_DIR=
+/cm/local/apps/slurm/var/spool/job8228601/slurm_script: line 24: export: `/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_instruct/vikmuru/checkpoint-800': not a valid identifier
+/cm/local/apps/slurm/var/spool/job8228601/slurm_script: line 25: export: `/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/eval/outputs_random_800': not a valid identifier
+CONDA_PREFIX=/home/vikmuru/.conda/envs/lf-train-clean
+Python executable: /home/vikmuru/.conda/envs/lf-train-clean/bin/python
+/home/vikmuru/.conda/envs/lf-train-clean/bin/python
+Name: transformers
+Version: 4.55.0
+Summary: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
+Home-page: https://github.com/huggingface/transformers
+Author: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)
+Author-email: transformers@huggingface.co
+License: Apache 2.0 License
+Location: /home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages
+Requires: filelock, huggingface-hub, numpy, packaging, pyyaml, regex, requests, safetensors, tokenizers, tqdm
+Required-by: compressed-tensors, llamafactory, peft, trl, vllm, xgrammar
+INFO 10-27 11:45:32 [__init__.py:235] Automatically detected platform cuda.
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+current stop list: None
+Random seed set as 0
+current eval model: Qwen/Qwen2.5-3B-Instruct
+use n = 8, generation epoch is: 1
+Completely same name file(./outputs/Qwen/Qwen2.5-3B-Instruct/aime/test_qwen-instruct_t0.6_k8_s0_e30.jsonl) exist, skip generation, save file and check correct

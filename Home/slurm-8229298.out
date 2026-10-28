@@ -1,0 +1,153 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /apps/common/software/Miniconda3/25.11.1-1/condabin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda-env
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/activate
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/deactivate
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.sh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/fish/conf.d/conda.fish
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/Conda.psm1
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/conda-hook.ps1
+no change     /apps/common/software/Miniconda3/25.11.1-1/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.csh
+no change     /home/vikmuru/.bashrc
+No action taken.
+SLURM_SUBMIT_DIR=
+CONDA_PREFIX=/home/vikmuru/.conda/envs/lf-train-clean
+Python executable: /home/vikmuru/.conda/envs/lf-train-clean/bin/python
+/home/vikmuru/.conda/envs/lf-train-clean/bin/python
+Name: transformers
+Version: 4.55.0
+Summary: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
+Home-page: https://github.com/huggingface/transformers
+Author: The Hugging Face team (past and future) with the help of all our contributors (https://github.com/huggingface/transformers/graphs/contributors)
+Author-email: transformers@huggingface.co
+License: Apache 2.0 License
+Location: /home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages
+Requires: filelock, huggingface-hub, numpy, packaging, pyyaml, regex, requests, safetensors, tokenizers, tqdm
+Required-by: compressed-tensors, llamafactory, peft, trl, vllm, xgrammar
+INFO 10-27 12:37:58 [__init__.py:235] Automatically detected platform cuda.
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+current stop list: None
+Random seed set as 0
+current eval model: /home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_instruct/vikmuru/checkpoint-800
+use n = 8, generation epoch is: 1
+available_gpus: ['0']
+
+  0%|          | 0/30 [00:00<?, ?it/s]
+  3%|▎         | 1/30 [00:00<00:06,  4.74it/s]
+ 53%|█████▎    | 16/30 [00:00<00:00, 62.86it/s]
+100%|██████████| 30/30 [00:00<00:00, 74.63it/s]
+<|im_start|>system
+Please reason step by step, and put your final answer within \boxed{}.<|im_end|>
+<|im_start|>user
+Every morning Aya goes for a $9$-kilometer-long walk and stops at a coffee shop afterwards. When she walks at a constant speed of $s$ kilometers per hour, the walk takes her 4 hours, including $t$ minutes spent in the coffee shop. When she walks $s+2$ kilometers per hour, the walk takes her 2 hours and 24 minutes, including $t$ minutes spent in the coffee shop. Suppose Aya walks at $s+\frac{1}{2}$ kilometers per hour. Find the number of minutes the walk takes her, including the $t$ minutes spent in the coffee shop.<|im_end|>
+<|im_start|>assistant
+vikmuruvikmuruvikmuru
+INFO 10-27 12:39:21 [config.py:1604] Using max model len 32768
+INFO 10-27 12:39:22 [config.py:2434] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 10-27 12:39:23 [core.py:572] Waiting for init message from front-end.vikmuru
+INFO 10-27 12:39:23 [core.py:71] Initializing a V1 LLM engine (v0.10.0) with config: model='/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_instruct/vikmuru/checkpoint-800', speculative_config=None, tokenizer='/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_instruct/vikmuru/checkpoint-800', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_instruct/vikmuru/checkpoint-800, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"max_capture_size":512,"local_cache_dir":null}
+INFO 10-27 12:39:27 [parallel_state.py:1102] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+WARNING 10-27 12:39:27 [topk_topp_sampler.py:59] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 10-27 12:39:27 [gpu_model_runner.py:1843] Starting to load model /home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/saves/qwen25_3b_instruct/vikmuru/checkpoint-800...
+INFO 10-27 12:39:27 [gpu_model_runner.py:1875] Loading model from scratch...
+INFO 10-27 12:39:27 [cuda.py:290] Using Flash Attention backend on V1 engine.
+
+Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+
+Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:00<00:00,  1.42it/s]
+
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:00<00:00,  2.29it/s]
+
+Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:00<00:00,  2.10it/s]
+
+INFO 10-27 12:39:28 [default_loader.py:262] Loading weights took 0.97 seconds
+INFO 10-27 12:39:29 [gpu_model_runner.py:1892] Model loading took 5.7916 GiB and 1.232783 seconds
+INFO 10-27 12:39:41 [backends.py:530] Using cache directory: /home/vikmuru/.cache/vllm/torch_compile_cache/d5140a28ba/rank_0_0/backbone for vLLM's torch.compile
+INFO 10-27 12:39:41 [backends.py:541] Dynamo bytecode transform time: 11.52 s
+INFO 10-27 12:39:47 [backends.py:161] Directly load the compiled graph(s) for dynamic shape from the cache, took 6.273 s
+INFO 10-27 12:39:48 [monitor.py:34] torch.compile takes 11.52 s in total
+INFO 10-27 12:39:49 [gpu_worker.py:255] Available KV cache memory: 122.74 GiB
+INFO 10-27 12:39:49 [kv_cache_utils.py:833] GPU KV cache size: 3,575,120 tokens
+INFO 10-27 12:39:49 [kv_cache_utils.py:837] Maximum concurrency for 32,768 tokens per request: 109.10x
+
+Capturing CUDA graph shapes:   0%|          | 0/67 [00:00<?, ?it/s]
+Capturing CUDA graph shapes:   7%|▋         | 5/67 [00:00<00:01, 41.61it/s]
+Capturing CUDA graph shapes:  15%|█▍        | 10/67 [00:00<00:01, 41.07it/s]
+Capturing CUDA graph shapes:  22%|██▏       | 15/67 [00:00<00:01, 40.63it/s]
+Capturing CUDA graph shapes:  30%|██▉       | 20/67 [00:00<00:01, 41.29it/s]
+Capturing CUDA graph shapes:  37%|███▋      | 25/67 [00:00<00:01, 33.90it/s]
+Capturing CUDA graph shapes:  43%|████▎     | 29/67 [00:00<00:01, 34.80it/s]
+Capturing CUDA graph shapes:  49%|████▉     | 33/67 [00:00<00:00, 34.98it/s]
+Capturing CUDA graph shapes:  55%|█████▌    | 37/67 [00:01<00:00, 35.44it/s]
+Capturing CUDA graph shapes:  61%|██████    | 41/67 [00:01<00:00, 33.66it/s]
+Capturing CUDA graph shapes:  67%|██████▋   | 45/67 [00:01<00:00, 33.18it/s]
+Capturing CUDA graph shapes:  73%|███████▎  | 49/67 [00:01<00:00, 33.35it/s]
+Capturing CUDA graph shapes:  79%|███████▉  | 53/67 [00:01<00:00, 33.19it/s]
+Capturing CUDA graph shapes:  85%|████████▌ | 57/67 [00:01<00:00, 32.60it/s]
+Capturing CUDA graph shapes:  91%|█████████ | 61/67 [00:01<00:00, 32.31it/s]
+Capturing CUDA graph shapes:  97%|█████████▋| 65/67 [00:01<00:00, 33.28it/s]
+Capturing CUDA graph shapes: 100%|██████████| 67/67 [00:01<00:00, 34.86it/s]
+INFO 10-27 12:39:51 [gpu_model_runner.py:2485] Graph capturing finished in 2 secs, took 0.50 GiB
+INFO 10-27 12:39:51 [core.py:193] init engine (profile, create kv cache, warmup model) took 22.52 seconds
+
+Adding requests:   0%|          | 0/30 [00:00<?, ?it/s]
+Adding requests: 100%|██████████| 30/30 [00:00<00:00, 1397.79it/s]
+
+Processed prompts:   0%|          | 0/240 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+Processed prompts:   3%|▎         | 8/240 [00:21<10:37,  2.75s/it, est. speed input: 75.30 toks/s, output: 326.40 toks/s]
+Processed prompts:   7%|▋         | 16/240 [00:24<05:02,  1.35s/it, est. speed input: 90.34 toks/s, output: 721.98 toks/s]
+Processed prompts:  10%|█         | 24/240 [00:32<04:15,  1.18s/it, est. speed input: 123.41 toks/s, output: 1004.86 toks/s]
+Processed prompts:  13%|█▎        | 32/240 [00:38<03:27,  1.00it/s, est. speed input: 140.67 toks/s, output: 1246.87 toks/s]
+Processed prompts:  17%|█▋        | 40/240 [11:07<1:36:38, 28.99s/it, est. speed input: 13.17 toks/s, output: 182.15 toks/s]
+Processed prompts:  20%|██        | 48/240 [11:15<1:02:20, 19.48s/it, est. speed input: 15.13 toks/s, output: 384.33 toks/s]
+Processed prompts:  27%|██▋       | 64/240 [11:16<29:00,  9.89s/it, est. speed input: 19.17 toks/s, output: 728.20 toks/s]  
+Processed prompts:  30%|███       | 72/240 [11:16<20:29,  7.32s/it, est. speed input: 21.07 toks/s, output: 795.20 toks/s]
+Processed prompts:  33%|███▎      | 80/240 [11:16<14:14,  5.34s/it, est. speed input: 22.86 toks/s, output: 855.12 toks/s]
+Processed prompts:  37%|███▋      | 88/240 [11:16<09:46,  3.86s/it, est. speed input: 24.51 toks/s, output: 1114.27 toks/s]
+Processed prompts:  40%|████      | 96/240 [11:16<06:38,  2.77s/it, est. speed input: 26.09 toks/s, output: 1272.03 toks/s]
+Processed prompts:  43%|████▎     | 104/240 [11:16<04:27,  1.97s/it, est. speed input: 27.61 toks/s, output: 1325.88 toks/s]
+Processed prompts:  50%|█████     | 120/240 [11:17<02:09,  1.08s/it, est. speed input: 30.56 toks/s, output: 1679.55 toks/s]
+Processed prompts:  57%|█████▋    | 136/240 [11:17<01:08,  1.51it/s, est. speed input: 33.32 toks/s, output: 1902.88 toks/s]
+Processed prompts:  63%|██████▎   | 152/240 [11:17<00:37,  2.35it/s, est. speed input: 35.93 toks/s, output: 2144.15 toks/s]
+Processed prompts:  70%|███████   | 168/240 [11:17<00:20,  3.53it/s, est. speed input: 38.39 toks/s, output: 2369.39 toks/s]
+Processed prompts:  80%|████████  | 192/240 [11:17<00:08,  6.00it/s, est. speed input: 41.87 toks/s, output: 3052.92 toks/s]
+Processed prompts:  93%|█████████▎| 224/240 [11:17<00:01, 10.63it/s, est. speed input: 45.98 toks/s, output: 3536.92 toks/s]
+Processed prompts: 100%|██████████| 240/240 [11:17<00:00, 10.63it/s, est. speed input: 47.83 toks/s, output: 3990.93 toks/s]
+Processed prompts: 100%|██████████| 240/240 [11:17<00:00,  2.82s/it, est. speed input: 47.83 toks/s, output: 3990.93 toks/s]
+llm generate done
+30
+
+check correct...:   0%|          | 0/30 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+
+check correct...:   3%|▎         | 1/30 [00:00<00:12,  2.26it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+ANTLR runtime and generated code versions disagree: 4.9.3!=4.7.2
+
+check correct...:  37%|███▋      | 11/30 [00:01<00:01, 10.47it/s][2026-10-27T12:51:13.496] error: *** JOB 8229298 ON tc-xe003 CANCELLED AT 2026-10-27T12:51:13 DUE to SIGNAL Terminated ***

@@ -1,0 +1,4 @@
+**/Advanced-Dataset-Creation/*.json
+**/Advanced-Dataset-Creation/*.npy
+**/LLaMA-Factory/data/*.json
+!**/LLaMA-Factory/data/dataset_info.json

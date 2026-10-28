@@ -1,0 +1,2011 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /apps/common/software/Miniconda3/25.11.1-1/condabin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda-env
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/activate
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/deactivate
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.sh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/fish/conf.d/conda.fish
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/Conda.psm1
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/conda-hook.ps1
+no change     /apps/common/software/Miniconda3/25.11.1-1/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.csh
+no change     /home/vikmuru/.bashrc
+No action taken.
+[2026-10-27 05:28:02,174] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/vikmuru/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+INFO 10-27 05:28:09 [__init__.py:235] Automatically detected platform cuda.
+[INFO|2026-10-27 05:28:16] llamafactory.cli:143 >> Initializing 1 distributed tasks at: 127.0.0.1:57889
+[2026-10-27 05:28:27,470] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/vikmuru/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2026-10-27 05:28:29,907] [INFO] [comm.py:669:init_distributed] cdb=None
+[2026-10-27 05:28:29,907] [INFO] [comm.py:700:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[INFO|2026-10-27 05:28:29] llamafactory.hparams.parser:414 >> Process rank: 0, world size: 1, device: cuda:0, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file vocab.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/vocab.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file merges.txt from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/merges.txt
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file tokenizer.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file tokenizer_config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:30,151 >> loading file chat_template.jinja from cache at None
+[INFO|tokenization_utils_base.py:2336] 2026-10-27 05:28:30,451 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:752] 2026-10-27 05:28:31,005 >> loading configuration file config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/config.json
+[INFO|configuration_utils.py:817] 2026-10-27 05:28:31,007 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file vocab.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/vocab.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file merges.txt from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/merges.txt
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file tokenizer.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file tokenizer_config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 05:28:31,081 >> loading file chat_template.jinja from cache at None
+[INFO|tokenization_utils_base.py:2336] 2026-10-27 05:28:31,284 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|2026-10-27 05:28:31] llamafactory.data.loader:143 >> Loading dataset acereason11_15k_sample.json...
+
+Converting format of dataset (num_proc=16):   0%|          | 0/15000 [00:00<?, ? examples/s]
+Converting format of dataset (num_proc=16):   9%|▊         | 1296/15000 [00:00<00:01, 11592.60 examples/s]
+Converting format of dataset (num_proc=16):  26%|██▌       | 3867/15000 [00:00<00:00, 18872.18 examples/s]
+Converting format of dataset (num_proc=16):  61%|██████    | 9148/15000 [00:00<00:00, 32584.42 examples/s]
+Converting format of dataset (num_proc=16):  86%|████████▌ | 12929/15000 [00:00<00:00, 32865.99 examples/s]
+Converting format of dataset (num_proc=16): 100%|██████████| 15000/15000 [00:00<00:00, 18219.31 examples/s]
+
+Running tokenizer on dataset (num_proc=16):   0%|          | 0/15000 [00:00<?, ? examples/s]
+Running tokenizer on dataset (num_proc=16):   6%|▌         | 937/15000 [01:04<16:03, 14.60 examples/s]
+Running tokenizer on dataset (num_proc=16):  12%|█▎        | 1875/15000 [01:05<06:17, 34.76 examples/s]
+Running tokenizer on dataset (num_proc=16):  19%|█▉        | 2813/15000 [01:05<03:14, 62.67 examples/s]
+Running tokenizer on dataset (num_proc=16):  25%|██▌       | 3751/15000 [01:06<01:50, 101.54 examples/s]
+Running tokenizer on dataset (num_proc=16):  31%|███▏      | 4689/15000 [01:06<01:06, 154.57 examples/s]
+Running tokenizer on dataset (num_proc=16):  38%|███▊      | 5627/15000 [01:06<00:40, 230.92 examples/s]
+Running tokenizer on dataset (num_proc=16):  44%|████▍     | 6565/15000 [01:07<00:25, 336.37 examples/s]
+Running tokenizer on dataset (num_proc=16):  50%|█████     | 7502/15000 [01:07<00:15, 481.67 examples/s]
+Running tokenizer on dataset (num_proc=16):  56%|█████▋    | 8439/15000 [01:07<00:09, 677.10 examples/s]
+Running tokenizer on dataset (num_proc=16):  75%|███████▌  | 11251/15000 [01:07<00:02, 1513.15 examples/s]
+Running tokenizer on dataset (num_proc=16):  88%|████████▊ | 13126/15000 [01:07<00:00, 2065.68 examples/s]
+Running tokenizer on dataset (num_proc=16):  94%|█████████▍| 14063/15000 [01:08<00:00, 2034.89 examples/s]
+Running tokenizer on dataset (num_proc=16): 100%|██████████| 15000/15000 [01:08<00:00, 2033.34 examples/s]
+Running tokenizer on dataset (num_proc=16): 100%|██████████| 15000/15000 [01:08<00:00, 217.42 examples/s] 
+training example:
+input_ids:
+[151644, 8948, 198, 2610, 525, 1207, 16948, 11, 3465, 553, 54364, 14817, 13, 1446, 525, 264, 10950, 17847, 13, 151645, 198, 151644, 872, 198, 3862, 525, 308, 14967, 3156, 279, 5636, 1380, 5765, 64, 6305, 11, 1817, 825, 374, 23983, 304, 825, 315, 595, 3204, 7987, 382, 2082, 7755, 13151, 11435, 3156, 419, 5636, 11, 714, 1340, 3171, 944, 1075, 979, 1378, 23942, 14967, 518, 279, 5636, 614, 279, 1852, 1894, 13, 2932, 6801, 311, 3293, 264, 1293, 10238, 315, 279, 5636, 1741, 429, 902, 1378, 23942, 14967, 614, 279, 1852, 1894, 382, 12689, 5765, 64, 1477, 279, 22032, 10238, 448, 419, 3343, 624, 2505, 271, 785, 1156, 1555, 5610, 1378, 25780, 308, 323, 595, 1959, 279, 1372, 315, 14967, 323, 279, 1372, 315, 7987, 320, 16, 37294, 308, 37294, 220, 16, 15, 15, 220, 15, 15, 15, 11, 220, 16, 37294, 595, 37294, 220, 16, 15, 15, 220, 15, 15, 15, 3593, 785, 1790, 1555, 5610, 308, 25780, 264, 62, 16, 11, 264, 62, 17, 11, 4593, 11, 264, 1089, 1959, 279, 7987, 315, 279, 14967, 3156, 279, 5636, 320, 16, 37294, 264, 5318, 37294, 595, 3593, 5097, 271, 5097, 264, 3175, 7546, 1959, 279, 7192, 1372, 315, 14967, 389, 279, 5636, 10238, 3432, 902, 1378, 23942, 14967, 315, 279, 1852, 1894, 382, 13314, 271, 2505, 1406, 23, 220, 18, 198, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 1406, 5097, 1406, 19, 271, 9112, 271, 641, 279, 3110, 11, 279, 22032, 10238, 2041, 41517, 14967, 315, 279, 1852, 1894, 374, 504, 279, 3753, 220, 19, 311, 279, 3753, 220, 22, 13, 576, 7987, 315, 279, 14967, 525, 508, 18, 11, 220, 17, 11, 220, 16, 11, 220, 17, 60, 323, 1181, 3084, 374, 220, 19, 14967, 382, 7985, 13027, 2038, 311, 11625, 279, 3491, 13, 5209, 1992, 279, 6291, 2038, 304, 279, 2701, 3561, 510, 73594, 12669, 198, 2, 4615, 6291, 2038, 1588, 198, 73594, 151645, 198, 151644, 77091, 198, 13708, 766, 397, 32313, 11, 1077, 594, 1490, 13, 576, 3491, 374, 311, 1477, 279, 22032, 10238, 315, 14967, 1380, 902, 1378, 23942, 14967, 614, 279, 1852, 1894, 13, 88190, 13, 2055, 11, 1246, 653, 358, 5486, 419, 1939, 40, 6099, 429, 369, 23700, 448, 16982, 389, 23942, 5424, 11, 33832, 3241, 12538, 646, 387, 5390, 13, 8909, 11, 23175, 264, 3241, 438, 1293, 438, 279, 2971, 9982, 11, 323, 7218, 279, 1191, 979, 432, 18303, 13, 1988, 304, 419, 1142, 11, 279, 2971, 374, 429, 23921, 5424, 525, 2155, 13, 2055, 11, 15356, 1378, 23921, 5424, 304, 279, 1482, 3241, 525, 279, 1852, 11, 279, 3241, 702, 311, 7500, 382, 14190, 11, 714, 7196, 358, 1184, 311, 3754, 279, 9892, 1380, 23921, 42328, 12170, 13, 1752, 3110, 11, 421, 304, 279, 3241, 11, 279, 3681, 2392, 374, 279, 1852, 438, 279, 1482, 825, 11, 1221, 279, 3241, 646, 944, 2924, 2176, 13, 2055, 11, 279, 7192, 2697, 3241, 1035, 387, 1948, 1378, 1741, 42328, 382, 92014, 11, 7196, 279, 5486, 374, 311, 2506, 3754, 315, 279, 1482, 1598, 594, 1191, 13, 8909, 11, 15356, 582, 1477, 1378, 23921, 5424, 429, 525, 279, 1852, 11, 582, 1184, 311, 7585, 279, 1191, 311, 279, 2309, 1948, 1105, 13, 6771, 752, 1744, 382, 10061, 594, 1896, 279, 3110, 1946, 25, 220, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 13, 576, 2550, 374, 220, 19, 13, 576, 10238, 504, 1922, 220, 18, 311, 220, 21, 320, 15, 5980, 8, 374, 220, 18, 11, 17, 11, 16, 11, 17, 13, 13824, 11, 279, 3110, 2727, 3753, 220, 19, 311, 220, 22, 11, 892, 374, 14937, 220, 18, 311, 220, 21, 304, 220, 15, 5980, 13, 2055, 279, 3084, 374, 220, 19, 382, 4340, 1558, 429, 8500, 975, 30, 576, 3681, 5424, 1573, 279, 1156, 220, 18, 320, 1782, 4843, 2392, 8, 525, 220, 16, 11, 17, 11, 18, 13, 5005, 279, 1790, 220, 18, 374, 264, 22513, 13, 2055, 279, 1482, 3241, 1035, 835, 518, 279, 1156, 220, 18, 13, 5005, 279, 1790, 1191, 374, 518, 279, 2086, 220, 18, 30, 1988, 429, 594, 264, 3491, 13, 13824, 11, 7196, 279, 4522, 374, 429, 15356, 264, 22513, 374, 1730, 11, 279, 501, 1191, 374, 738, 311, 279, 3681, 1922, 13, 6771, 594, 1490, 382, 14037, 3110, 25, 22477, 279, 8500, 374, 220, 16, 11, 16, 13, 576, 7192, 3084, 374, 220, 16, 13, 1988, 421, 279, 8500, 374, 220, 16, 11, 17, 11, 16, 11, 279, 7192, 374, 220, 18, 13, 2055, 279, 12111, 1265, 3754, 279, 1191, 315, 279, 1482, 2697, 3241, 323, 2647, 432, 15356, 264, 22513, 374, 1730, 382, 14190, 11, 8365, 279, 1376, 374, 311, 3754, 279, 1537, 31559, 1380, 264, 22513, 572, 1730, 13, 6771, 594, 1744, 315, 279, 1482, 3241, 438, 508, 2359, 11, 1290, 936, 1752, 1817, 2309, 1290, 11, 582, 1779, 421, 279, 1482, 2392, 264, 52918, 60, 374, 6144, 311, 264, 52918, 12, 16, 936, 1416, 9834, 11, 1221, 279, 1790, 2697, 3241, 1969, 1191, 518, 1290, 13, 18214, 11, 279, 3241, 646, 3060, 382, 14190, 11, 902, 13, 9211, 42328, 646, 387, 537, 1101, 518, 1290, 12, 16, 323, 1290, 13, 1752, 3110, 11, 421, 279, 8500, 374, 220, 16, 11, 17, 11, 16, 11, 16, 13, 576, 22513, 374, 518, 9892, 220, 18, 323, 220, 19, 320, 16, 5980, 568, 2055, 979, 582, 5545, 279, 2086, 220, 16, 518, 2309, 220, 19, 11, 279, 1191, 1035, 614, 311, 387, 738, 311, 2309, 220, 18, 13, 2055, 279, 7192, 3241, 1588, 1035, 387, 9892, 220, 16, 12, 18, 320, 4129, 220, 18, 8, 476, 220, 17, 12, 18, 320, 4129, 220, 17, 701, 773, 220, 18, 382, 80022, 13, 2055, 8365, 279, 5486, 374, 311, 3754, 279, 1191, 315, 279, 1482, 2697, 3241, 13, 576, 3241, 374, 2697, 421, 1052, 525, 902, 1378, 23921, 5424, 279, 1852, 13, 2055, 1246, 653, 582, 10306, 429, 1939, 92014, 11, 279, 2697, 3241, 646, 944, 614, 894, 1378, 23921, 42328, 13, 2055, 11, 15356, 582, 912, 264, 501, 2392, 311, 279, 3241, 11, 582, 1779, 421, 432, 594, 279, 1852, 438, 279, 3681, 2392, 304, 279, 3241, 13, 1416, 432, 374, 11, 1221, 279, 1482, 3241, 594, 1191, 1969, 387, 23368, 311, 279, 3681, 2309, 320, 704, 429, 279, 501, 3241, 8471, 1283, 279, 3681, 2392, 568, 1988, 3783, 11, 7196, 582, 1184, 311, 3754, 279, 2309, 1380, 279, 1537, 22513, 10017, 382, 14190, 11, 1588, 594, 458, 4522, 13, 576, 7192, 3204, 2697, 8500, 374, 10838, 553, 279, 9892, 1380, 23921, 42328, 12170, 13, 576, 22032, 10238, 1948, 1378, 1741, 42328, 320, 7138, 279, 10335, 8, 1035, 387, 279, 7192, 3084, 382, 4416, 11, 279, 12111, 646, 2506, 3754, 315, 279, 1191, 315, 279, 1482, 3241, 13, 58556, 11, 1191, 374, 220, 15, 13, 5005, 11, 369, 1817, 600, 504, 220, 16, 311, 308, 12, 16, 1447, 12, 421, 264, 989, 60, 621, 264, 989, 12, 16, 1125, 1221, 279, 1482, 3241, 646, 944, 2924, 2176, 11, 773, 279, 1790, 3241, 594, 1191, 374, 600, 13, 1988, 1948, 1191, 323, 600, 11, 279, 1482, 3241, 374, 504, 1191, 311, 600, 12, 16, 11, 323, 582, 646, 11047, 279, 3084, 13, 13824, 11, 714, 1246, 1939, 92014, 11, 15356, 264, 22513, 374, 1730, 320, 64, 989, 60, 621, 264, 989, 12, 16, 9719, 582, 5185, 429, 279, 1482, 3241, 10335, 518, 600, 12, 16, 13, 5005, 279, 501, 3241, 8471, 518, 600, 13, 1988, 304, 419, 1142, 11, 279, 7192, 3084, 1410, 387, 279, 7192, 315, 279, 3681, 7192, 323, 279, 1482, 3241, 594, 3084, 382, 3983, 1128, 911, 5048, 1380, 1052, 525, 5248, 42328, 30, 1752, 3110, 11, 220, 16, 11, 17, 11, 18, 11, 18, 11, 17, 11, 17, 11, 16, 13, 576, 42328, 525, 518, 220, 18, 12, 19, 320, 18, 323, 220, 18, 8, 323, 220, 20, 12, 21, 320, 17, 323, 220, 17, 568, 2055, 279, 11030, 1035, 387, 504, 220, 15, 12, 17, 320, 4129, 220, 18, 701, 1221, 220, 18, 12, 18, 320, 4129, 220, 16, 701, 1221, 220, 19, 12, 19, 320, 4129, 220, 16, 701, 1221, 220, 20, 12, 20, 320, 4129, 220, 16, 701, 1221, 220, 21, 12, 21, 320, 4129, 220, 16, 568, 1988, 279, 7192, 1035, 387, 220, 18, 13, 1988, 7196, 1052, 594, 264, 5021, 3241, 304, 1948, 13, 13824, 11, 279, 1156, 3241, 374, 220, 15, 12, 17, 11, 1221, 1283, 279, 1156, 22513, 518, 220, 18, 11, 279, 1191, 10797, 311, 220, 18, 13, 1988, 1221, 11, 279, 1790, 5424, 525, 220, 18, 11, 17, 13, 2055, 518, 600, 28, 19, 11, 279, 2392, 374, 220, 17, 13, 4248, 421, 432, 594, 6144, 311, 264, 989, 12, 16, 60, 320, 18, 568, 2308, 11, 773, 279, 3241, 646, 2924, 220, 18, 323, 220, 19, 13, 5005, 518, 600, 28, 20, 320, 6101, 220, 17, 701, 264, 989, 60, 374, 6144, 311, 264, 989, 12, 16, 1125, 773, 279, 3241, 504, 220, 18, 311, 220, 19, 320, 4129, 220, 17, 8, 374, 6509, 11, 323, 1191, 10797, 311, 220, 20, 13, 5005, 600, 28, 21, 11, 264, 989, 60, 374, 220, 16, 961, 264, 989, 12, 16, 60, 320, 17, 701, 773, 279, 3241, 374, 220, 20, 311, 220, 21, 13, 2055, 279, 7192, 374, 1932, 7, 18, 11, 220, 17, 11, 220, 17, 8, 892, 374, 220, 18, 13, 1988, 304, 279, 5042, 1334, 11, 279, 22032, 2697, 10238, 374, 220, 17, 11, 18, 11, 17, 320, 27436, 220, 16, 12, 18, 8, 892, 374, 3084, 220, 18, 11, 714, 7196, 358, 2776, 7402, 2494, 382, 14190, 11, 8365, 279, 5486, 374, 7402, 1045, 23607, 13, 9211, 979, 264, 22513, 374, 1730, 11, 279, 501, 3241, 8471, 518, 600, 11, 714, 7196, 1052, 594, 264, 5021, 3241, 429, 8471, 1573, 600, 13, 1752, 3110, 11, 421, 1052, 594, 264, 1293, 14501, 2041, 42328, 11, 714, 1052, 572, 264, 22513, 1753, 6788, 11, 279, 3241, 1410, 1191, 1283, 279, 3681, 22513, 714, 1573, 279, 1482, 825, 382, 14190, 11, 8365, 279, 4396, 5486, 374, 311, 3754, 279, 2309, 315, 279, 1537, 31559, 1380, 264, 22513, 6932, 13, 6771, 752, 1744, 1549, 382, 14037, 5486, 25, 1752, 1817, 2309, 600, 11, 279, 22032, 2697, 3241, 13391, 518, 600, 374, 2987, 279, 3241, 13391, 518, 600, 12, 16, 11577, 553, 600, 320, 333, 264, 989, 60, 961, 264, 989, 12, 16, 9719, 476, 264, 501, 3241, 5916, 518, 600, 12, 16, 323, 600, 320, 333, 264, 989, 60, 621, 264, 989, 12, 16, 1125, 714, 429, 646, 944, 387, 949, 315, 279, 1852, 3241, 568, 13824, 11, 902, 13, 1416, 264, 989, 60, 16819, 264, 989, 12, 16, 1125, 1221, 279, 3241, 13391, 518, 600, 646, 944, 387, 5021, 1091, 220, 16, 320, 11284, 279, 1378, 23942, 5424, 525, 1852, 568, 13824, 11, 902, 11, 1576, 304, 429, 1142, 11, 279, 3241, 646, 944, 2924, 2176, 13, 2055, 369, 3110, 11, 421, 279, 1482, 2392, 374, 279, 1852, 438, 3681, 11, 1221, 279, 7192, 3241, 13391, 1588, 374, 220, 16, 320, 4250, 279, 1482, 2392, 8, 476, 7196, 279, 1191, 702, 311, 387, 23368, 382, 14190, 11, 7196, 419, 646, 387, 61553, 1667, 8741, 15473, 13, 6771, 594, 6979, 11329, 989, 60, 438, 279, 3084, 315, 279, 22032, 2697, 3241, 13391, 518, 2309, 600, 382, 12209, 11, 369, 1817, 600, 2604, 16, 1447, 333, 264, 989, 60, 961, 264, 989, 12, 16, 1125, 1221, 11329, 989, 60, 284, 11329, 989, 12, 16, 60, 488, 220, 16, 382, 1503, 11, 11329, 989, 60, 284, 220, 16, 11, 2474, 279, 3241, 646, 944, 2924, 2176, 600, 323, 600, 12, 16, 11, 773, 279, 3241, 8471, 518, 600, 382, 3983, 419, 4977, 311, 10034, 1045, 23607, 13, 1752, 3110, 11, 2908, 264, 8500, 1075, 220, 16, 11, 17, 11, 16, 11, 17, 13, 576, 11329, 1334, 1035, 387, 220, 16, 11, 17, 11, 18, 11, 19, 11, 892, 374, 4396, 13, 1416, 279, 8500, 374, 220, 16, 11, 17, 11, 17, 11, 18, 11, 1221, 11329, 58, 16, 60, 284, 17, 11, 11329, 58, 17, 60, 284, 16, 320, 11284, 220, 17, 28, 17, 701, 1221, 11329, 58, 18, 60, 284, 17, 320, 11284, 220, 18, 961, 17, 568, 2055, 279, 7192, 374, 220, 17, 11, 892, 374, 4396, 382, 14190, 11, 714, 279, 3110, 2661, 304, 279, 3491, 374, 979, 279, 1946, 374, 220, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 13, 6771, 594, 12564, 279, 11329, 1334, 1447, 31941, 320, 15, 5980, 7731, 15, 25, 220, 16, 320, 9796, 58, 15, 60, 284, 16, 692, 16, 25, 17, 961, 16, 11397, 11329, 28, 17, 271, 17, 25, 18, 961, 17, 11397, 11329, 28, 18, 271, 18, 25, 18, 621, 18, 11397, 11329, 28, 16, 320, 2468, 518, 220, 18, 692, 19, 25, 17, 961, 18, 11397, 11329, 28, 17, 320, 18, 311, 19, 692, 20, 25, 16, 961, 17, 11397, 11329, 28, 18, 320, 18, 11, 19, 11, 20, 692, 21, 25, 17, 961, 16, 11397, 11329, 28, 19, 320, 18, 11, 19, 11, 20, 11, 21, 692, 22, 25, 17, 621, 17, 11397, 11329, 28, 16, 320, 2468, 518, 22, 692, 4416, 279, 7192, 374, 220, 19, 11, 892, 9071, 279, 3110, 13, 2055, 419, 5486, 4977, 311, 975, 13, 5005, 279, 7192, 315, 279, 11329, 1334, 374, 279, 4226, 13, 2055, 419, 4977, 1075, 264, 2697, 6291, 382, 4416, 279, 12111, 1035, 387, 311, 12564, 279, 11329, 1334, 438, 11017, 1447, 9928, 11329, 58, 15, 60, 284, 16, 382, 2461, 600, 504, 220, 16, 311, 308, 12, 16, 1447, 333, 264, 989, 60, 961, 264, 989, 12, 16, 1125, 1221, 11329, 989, 60, 284, 11329, 989, 12, 16, 60, 488, 16, 382, 1503, 11, 11329, 989, 60, 284, 16, 382, 12209, 279, 7192, 897, 304, 279, 11329, 1334, 374, 279, 4226, 382, 1986, 5486, 374, 506, 1445, 8, 882, 323, 506, 1445, 8, 3550, 13, 1988, 308, 646, 387, 705, 311, 220, 16, 68, 20, 13, 1752, 13027, 11, 220, 16, 68, 20, 5424, 374, 70028, 11, 714, 7196, 582, 646, 29436, 279, 3550, 13, 9211, 582, 1172, 1184, 279, 3681, 897, 11, 537, 279, 4453, 1334, 382, 4416, 4518, 315, 27572, 279, 4453, 11329, 1334, 11, 582, 646, 3754, 279, 1482, 3084, 323, 279, 7192, 382, 9928, 1932, 6043, 284, 16, 11, 1482, 6043, 28, 16, 382, 2461, 600, 504, 220, 16, 311, 308, 12, 16, 1447, 333, 264, 989, 60, 961, 264, 989, 12, 16, 1125, 1482, 6043, 1421, 16, 382, 1503, 11, 1482, 6043, 284, 16, 382, 3391, 11, 2647, 1932, 6043, 421, 1482, 6043, 374, 8131, 382, 9454, 11, 419, 4278, 13, 9211, 1817, 882, 264, 22513, 374, 1730, 11, 279, 1482, 8500, 374, 10865, 11, 323, 279, 1790, 3204, 8500, 8471, 518, 279, 1482, 2309, 382, 4416, 279, 2038, 1035, 387, 1447, 77, 11, 595, 284, 2415, 1548, 11, 1946, 1005, 6960, 2398, 64, 284, 1140, 9147, 1548, 11, 1946, 1005, 6960, 49962, 333, 308, 621, 15, 510, 262, 1173, 7, 15, 340, 1503, 510, 262, 1932, 6043, 284, 220, 16, 198, 262, 1482, 284, 16, 198, 262, 369, 600, 304, 2088, 7, 16, 11, 308, 982, 286, 421, 264, 989, 60, 961, 264, 989, 12, 16, 10343, 310, 1482, 1421, 16, 198, 286, 770, 510, 310, 1482, 284, 16, 198, 286, 421, 1482, 861, 1932, 6043, 510, 310, 1932, 6043, 284, 1482, 198, 262, 1173, 8739, 6043, 692, 14190, 11, 714, 3783, 13, 6771, 594, 1273, 419, 2038, 2348, 279, 3110, 382, 785, 3110, 1946, 1447, 23, 220, 18, 271, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 271, 785, 2038, 1035, 1882, 279, 1334, 438, 11017, 1447, 72, 28, 16, 320, 64, 58, 16, 4833, 17, 961, 16, 11397, 1482, 28, 17, 11, 1932, 28, 17, 692, 72, 28, 17, 320, 18, 145129, 17, 11397, 1482, 28, 18, 11, 1932, 28, 18, 692, 72, 28, 18, 320, 18, 28, 18, 11397, 1482, 28, 16, 11, 1932, 8458, 220, 18, 692, 72, 28, 19, 320, 17, 145129, 18, 11397, 1482, 28, 17, 692, 72, 28, 20, 320, 16, 145129, 17, 11397, 1482, 28, 18, 692, 72, 28, 21, 320, 17, 145129, 16, 11397, 1482, 28, 19, 11397, 1932, 9044, 19, 692, 72, 28, 22, 320, 17, 28, 17, 11397, 1482, 28, 16, 692, 4416, 279, 1932, 374, 220, 19, 11, 892, 374, 4396, 382, 14037, 1273, 1142, 25, 508, 16, 11, 16, 2533, 785, 2038, 8471, 448, 1482, 28, 16, 13, 5005, 600, 28, 16, 25, 264, 58, 16, 60, 621, 264, 58, 15, 1125, 1482, 28, 16, 13, 7487, 8458, 220, 16, 13, 2055, 2550, 374, 220, 16, 382, 14037, 1273, 1142, 25, 508, 16, 11, 17, 11, 16, 11, 16, 936, 576, 2038, 1035, 1882, 1447, 72, 28, 16, 25, 220, 17, 145129, 16, 11397, 1482, 28, 17, 11, 1932, 28, 17, 382, 72, 28, 17, 25, 16, 145129, 17, 11397, 1482, 28, 18, 11, 1932, 28, 18, 382, 72, 28, 18, 25, 16, 621, 16, 11397, 1482, 28, 16, 13, 2055, 279, 1932, 374, 220, 18, 382, 23085, 374, 4396, 1576, 279, 22032, 2697, 8500, 374, 220, 16, 11, 17, 11, 16, 320, 27436, 220, 15, 12, 17, 3593, 4416, 419, 5486, 4977, 311, 975, 382, 4416, 279, 2038, 646, 387, 5326, 438, 1447, 4418, 308, 323, 595, 382, 4418, 279, 1140, 264, 382, 6999, 6821, 1142, 979, 308, 374, 220, 15, 320, 8088, 4092, 311, 3491, 5114, 11, 308, 374, 518, 3245, 220, 16, 3593, 9928, 1932, 6043, 323, 1482, 311, 220, 16, 382, 14620, 504, 220, 16, 311, 308, 12, 16, 1447, 256, 9429, 1482, 323, 3681, 382, 256, 2647, 1482, 382, 256, 2647, 1932, 382, 23949, 11, 1173, 1932, 6043, 382, 1986, 374, 506, 1445, 8, 882, 323, 506, 7, 16, 8, 3550, 13, 15920, 374, 11050, 369, 308, 705, 311, 220, 16, 68, 20, 382, 4416, 279, 2038, 1265, 975, 624, 522, 26865, 1339, 73594, 12669, 198, 77, 11, 595, 284, 2415, 1548, 11, 1946, 1005, 6960, 2398, 64, 284, 1140, 9147, 1548, 11, 1946, 1005, 6960, 49962, 2810, 6043, 284, 220, 16, 198, 3231, 284, 220, 16, 271, 1958, 600, 304, 2088, 7, 16, 11, 308, 982, 262, 421, 264, 989, 60, 961, 264, 989, 12, 16, 10343, 286, 1482, 1421, 220, 16, 198, 262, 770, 510, 286, 1482, 284, 220, 16, 198, 262, 421, 1482, 861, 1932, 6043, 510, 286, 1932, 6043, 284, 1482, 271, 1350, 8739, 6043, 340, 73594, 151645, 198]
+inputs:
+<|im_start|>system
+You are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>
+<|im_start|>user
+There are n houses along the road where Anya lives, each one is painted in one of k possible colors.
+
+Anya likes walking along this road, but she doesn't like when two adjacent houses at the road have the same color. She wants to select a long segment of the road such that no two adjacent houses have the same color.
+
+Help Anya find the longest segment with this property.
+Input
+
+The first line contains two integers n and k — the number of houses and the number of colors (1 ≤ n ≤ 100 000, 1 ≤ k ≤ 100 000).
+
+The next line contains n integers a_1, a_2, …, a_n — the colors of the houses along the road (1 ≤ a_i ≤ k).
+
+Output
+
+Output a single integer — the maximum number of houses on the road segment having no two adjacent houses of the same color.
+
+Example
+
+Input
+
+
+8 3
+1 2 3 3 2 1 2 2
+
+
+Output
+
+
+4
+
+Note
+
+In the example, the longest segment without neighboring houses of the same color is from the house 4 to the house 7. The colors of the houses are [3, 2, 1, 2] and its length is 4 houses.
+
+Write Python code to solve the problem. Please place the solution code in the following format:
+```python
+# Your solution code here
+```<|im_end|>
+<|im_start|>assistant
+<think>
+Okay, let's see. The problem is to find the longest segment of houses where no two adjacent houses have the same color. Hmm. So, how do I approach this?
+
+I remember that for sequences with constraints on adjacent elements, sliding window techniques can be useful. Like, expanding a window as long as the condition holds, and moving the start when it breaks. But in this case, the condition is that consecutive elements are different. So, whenever two consecutive elements in the current window are the same, the window has to adjust.
+
+Wait, but maybe I need to track the positions where consecutive duplicates occur. For example, if in the window, the previous element is the same as the current one, then the window can't include both. So, the maximum valid window would be between two such duplicates.
+
+Alternatively, maybe the approach is to keep track of the current run's start. Like, whenever we find two consecutive elements that are the same, we need to reset the start to the position between them. Let me think.
+
+Let's take the example input: 1 2 3 3 2 1 2 2. The output is 4. The segment from index 3 to 6 (0-based) is 3,2,1,2. Wait, the example says house 4 to 7, which is indices 3 to 6 in 0-based. So the length is 4.
+
+How does that sequence work? The previous elements before the first 3 (the third element) are 1,2,3. Then the next 3 is a duplicate. So the current window would end at the first 3. Then the next start is at the second 3? But that's a problem. Wait, maybe the idea is that whenever a duplicate is found, the new start is set to the previous index. Let's see.
+
+Another example: suppose the sequence is 1,1. The maximum length is 1. But if the sequence is 1,2,1, the maximum is 3. So the algorithm should track the start of the current valid window and update it whenever a duplicate is found.
+
+Wait, perhaps the key is to track the last occurrence where a duplicate was found. Let's think of the current window as [left, right]. For each position right, we check if the current element a[right] is equal to a[right-1]. If yes, then the next valid window must start at right. Otherwise, the window can continue.
+
+Wait, no. Because duplicates can be not just at right-1 and right. For example, if the sequence is 1,2,1,1. The duplicate is at positions 3 and 4 (1-based). So when we reach the second 1 at position 4, the start would have to be set to position 3. So the maximum window here would be positions 1-3 (length 3) or 2-3 (length 2), so 3.
+
+Hmm. So perhaps the approach is to track the start of the current valid window. The window is valid if there are no two consecutive elements the same. So how do we maintain that?
+
+Alternatively, the valid window can't have any two consecutive duplicates. So, whenever we add a new element to the window, we check if it's the same as the previous element in the window. If it is, then the current window's start must be adjusted to the previous position (so that the new window starts after the previous element). But wait, maybe we need to track the position where the last duplicate occurred.
+
+Wait, here's an idea. The maximum possible valid sequence is determined by the positions where consecutive duplicates occur. The longest segment between two such duplicates (plus the ends) would be the maximum length.
+
+So, the algorithm can keep track of the start of the current window. Initially, start is 0. Then, for each i from 1 to n-1:
+
+- if a[i] == a[i-1], then the current window can't include both, so the next window's start is i. But between start and i, the current window is from start to i-1, and we can calculate the length. Wait, but how?
+
+Alternatively, whenever a duplicate is found (a[i] == a[i-1]), we note that the current window ends at i-1. Then the new window starts at i. But in this case, the maximum length could be the maximum of the previous maximum and the current window's length.
+
+But what about cases where there are multiple duplicates? For example, 1,2,3,3,2,2,1. The duplicates are at 3-4 (3 and 3) and 5-6 (2 and 2). So the windows would be from 0-2 (length 3), then 3-3 (length 1), then 4-4 (length 1), then 5-5 (length 1), then 6-6 (length 1). But the maximum would be 3. But maybe there's a longer window in between. Wait, the first window is 0-2, then after the first duplicate at 3, the start moves to 3. But then, the next elements are 3,2. So at i=4, the element is 2. Check if it's equal to a[i-1] (3). No, so the window can include 3 and 4. Then at i=5 (element 2), a[i] is equal to a[i-1], so the window from 3 to 4 (length 2) is considered, and start moves to 5. Then i=6, a[i] is 1 != a[i-1] (2), so the window is 5 to 6. So the maximum is max(3, 2, 2) which is 3. But in the actual array, the longest valid segment is 2,3,2 (positions 1-3) which is length 3, but maybe I'm missing something.
+
+Wait, perhaps the approach is missing some possibilities. Because when a duplicate is found, the new window starts at i, but maybe there's a longer window that starts before i. For example, if there's a long stretch without duplicates, but there was a duplicate much earlier, the window could start after the previous duplicate but before the current one.
+
+Wait, perhaps the correct approach is to track the position of the last occurrence where a duplicate happened. Let me think again.
+
+Another approach: For each position i, the longest valid window ending at i is either the window ending at i-1 extended by i (if a[i] != a[i-1]), or a new window starting at i-1 and i (if a[i] == a[i-1], but that can't be part of the same window). Wait, no. If a[i] equals a[i-1], then the window ending at i can't be longer than 1 (since the two adjacent elements are same). Wait, no, because in that case, the window can't include both. So for example, if the current element is the same as previous, then the maximum window ending here is 1 (just the current element) or maybe the start has to be adjusted.
+
+Wait, maybe this can be modeled using dynamic programming. Let's define dp[i] as the length of the longest valid window ending at position i.
+
+Then, for each i >=1:
+
+if a[i] != a[i-1], then dp[i] = dp[i-1] + 1.
+
+else, dp[i] = 1, since the window can't include both i and i-1, so the window starts at i.
+
+But this seems to ignore some possibilities. For example, consider a sequence like 1,2,1,2. The dp array would be 1,2,3,4, which is correct. If the sequence is 1,2,2,3, then dp[1] =2, dp[2] =1 (since 2=2), then dp[3] =2 (since 3 !=2). So the maximum is 2, which is correct.
+
+Wait, but the example given in the problem is when the input is 1 2 3 3 2 1 2 2. Let's compute the dp array:
+
+Indices (0-based):
+
+0: 1 (dp[0] =1)
+
+1:2 !=1 → dp=2
+
+2:3 !=2 → dp=3
+
+3:3 ==3 → dp=1 (start at 3)
+
+4:2 !=3 → dp=2 (3 to4)
+
+5:1 !=2 → dp=3 (3,4,5)
+
+6:2 !=1 → dp=4 (3,4,5,6)
+
+7:2 ==2 → dp=1 (start at7)
+
+So the maximum is 4, which matches the example. So this approach seems to work. Then the maximum of the dp array is the answer. So this seems like a valid solution.
+
+So the algorithm would be to compute the dp array as follows:
+
+Initialize dp[0] =1.
+
+For i from 1 to n-1:
+
+if a[i] != a[i-1], then dp[i] = dp[i-1] +1.
+
+else, dp[i] =1.
+
+Then the maximum value in the dp array is the answer.
+
+This approach is O(n) time and O(n) space. But n can be up to 1e5. For Python, 1e5 elements is manageable, but maybe we can optimize the space. Because we only need the previous value, not the entire array.
+
+So instead of storing the entire dp array, we can track the current length and the maximum.
+
+Initialize max_len =1, current_len=1.
+
+For i from 1 to n-1:
+
+if a[i] != a[i-1], current_len +=1.
+
+else, current_len =1.
+
+then, update max_len if current_len is larger.
+
+Yes, this works. Because each time a duplicate is found, the current sequence is broken, and the next possible sequence starts at the current position.
+
+So the code would be:
+
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+
+if n ==0:
+    print(0)
+else:
+    max_len = 1
+    current =1
+    for i in range(1, n):
+        if a[i] != a[i-1]:
+            current +=1
+        else:
+            current =1
+        if current > max_len:
+            max_len = current
+    print(max_len)
+
+Wait, but wait. Let's test this code against the example.
+
+The example input:
+
+8 3
+
+1 2 3 3 2 1 2 2
+
+The code would process the array as follows:
+
+i=1 (a[1]=2 !=1 → current=2, max=2)
+
+i=2 (3≠2 → current=3, max=3)
+
+i=3 (3=3 → current=1, max remains 3)
+
+i=4 (2≠3 → current=2)
+
+i=5 (1≠2 → current=3)
+
+i=6 (2≠1 → current=4 → max becomes4)
+
+i=7 (2=2 → current=1)
+
+So the max is 4, which is correct.
+
+Another test case: [1,1]
+
+The code starts with current=1. Then i=1: a[1] == a[0], current=1. Max remains 1. So output is 1.
+
+Another test case: [1,2,1,1]. The code would process:
+
+i=1: 2≠1 → current=2, max=2.
+
+i=2:1≠2 → current=3, max=3.
+
+i=3:1 ==1 → current=1. So the max is 3.
+
+Which is correct because the longest valid sequence is 1,2,1 (positions 0-2).
+
+So this approach seems to work.
+
+So the code can be written as:
+
+Read n and k.
+
+Read the list a.
+
+Handle edge case when n is 0 (but according to problem statement, n is at least 1).
+
+Initialize max_len and current to 1.
+
+Loop from 1 to n-1:
+
+   compare current and previous.
+
+   update current.
+
+   update max.
+
+Finally, print max_len.
+
+This is O(n) time and O(1) space. Which is efficient for n up to 1e5.
+
+So the code should work.
+</think>
+
+```python
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+
+max_len = 1
+current = 1
+
+for i in range(1, n):
+    if a[i] != a[i-1]:
+        current += 1
+    else:
+        current = 1
+    if current > max_len:
+        max_len = current
+
+print(max_len)
+```<|im_end|>
+
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 13708, 766, 397, 32313, 11, 1077, 594, 1490, 13, 576, 3491, 374, 311, 1477, 279, 22032, 10238, 315, 14967, 1380, 902, 1378, 23942, 14967, 614, 279, 1852, 1894, 13, 88190, 13, 2055, 11, 1246, 653, 358, 5486, 419, 1939, 40, 6099, 429, 369, 23700, 448, 16982, 389, 23942, 5424, 11, 33832, 3241, 12538, 646, 387, 5390, 13, 8909, 11, 23175, 264, 3241, 438, 1293, 438, 279, 2971, 9982, 11, 323, 7218, 279, 1191, 979, 432, 18303, 13, 1988, 304, 419, 1142, 11, 279, 2971, 374, 429, 23921, 5424, 525, 2155, 13, 2055, 11, 15356, 1378, 23921, 5424, 304, 279, 1482, 3241, 525, 279, 1852, 11, 279, 3241, 702, 311, 7500, 382, 14190, 11, 714, 7196, 358, 1184, 311, 3754, 279, 9892, 1380, 23921, 42328, 12170, 13, 1752, 3110, 11, 421, 304, 279, 3241, 11, 279, 3681, 2392, 374, 279, 1852, 438, 279, 1482, 825, 11, 1221, 279, 3241, 646, 944, 2924, 2176, 13, 2055, 11, 279, 7192, 2697, 3241, 1035, 387, 1948, 1378, 1741, 42328, 382, 92014, 11, 7196, 279, 5486, 374, 311, 2506, 3754, 315, 279, 1482, 1598, 594, 1191, 13, 8909, 11, 15356, 582, 1477, 1378, 23921, 5424, 429, 525, 279, 1852, 11, 582, 1184, 311, 7585, 279, 1191, 311, 279, 2309, 1948, 1105, 13, 6771, 752, 1744, 382, 10061, 594, 1896, 279, 3110, 1946, 25, 220, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 13, 576, 2550, 374, 220, 19, 13, 576, 10238, 504, 1922, 220, 18, 311, 220, 21, 320, 15, 5980, 8, 374, 220, 18, 11, 17, 11, 16, 11, 17, 13, 13824, 11, 279, 3110, 2727, 3753, 220, 19, 311, 220, 22, 11, 892, 374, 14937, 220, 18, 311, 220, 21, 304, 220, 15, 5980, 13, 2055, 279, 3084, 374, 220, 19, 382, 4340, 1558, 429, 8500, 975, 30, 576, 3681, 5424, 1573, 279, 1156, 220, 18, 320, 1782, 4843, 2392, 8, 525, 220, 16, 11, 17, 11, 18, 13, 5005, 279, 1790, 220, 18, 374, 264, 22513, 13, 2055, 279, 1482, 3241, 1035, 835, 518, 279, 1156, 220, 18, 13, 5005, 279, 1790, 1191, 374, 518, 279, 2086, 220, 18, 30, 1988, 429, 594, 264, 3491, 13, 13824, 11, 7196, 279, 4522, 374, 429, 15356, 264, 22513, 374, 1730, 11, 279, 501, 1191, 374, 738, 311, 279, 3681, 1922, 13, 6771, 594, 1490, 382, 14037, 3110, 25, 22477, 279, 8500, 374, 220, 16, 11, 16, 13, 576, 7192, 3084, 374, 220, 16, 13, 1988, 421, 279, 8500, 374, 220, 16, 11, 17, 11, 16, 11, 279, 7192, 374, 220, 18, 13, 2055, 279, 12111, 1265, 3754, 279, 1191, 315, 279, 1482, 2697, 3241, 323, 2647, 432, 15356, 264, 22513, 374, 1730, 382, 14190, 11, 8365, 279, 1376, 374, 311, 3754, 279, 1537, 31559, 1380, 264, 22513, 572, 1730, 13, 6771, 594, 1744, 315, 279, 1482, 3241, 438, 508, 2359, 11, 1290, 936, 1752, 1817, 2309, 1290, 11, 582, 1779, 421, 279, 1482, 2392, 264, 52918, 60, 374, 6144, 311, 264, 52918, 12, 16, 936, 1416, 9834, 11, 1221, 279, 1790, 2697, 3241, 1969, 1191, 518, 1290, 13, 18214, 11, 279, 3241, 646, 3060, 382, 14190, 11, 902, 13, 9211, 42328, 646, 387, 537, 1101, 518, 1290, 12, 16, 323, 1290, 13, 1752, 3110, 11, 421, 279, 8500, 374, 220, 16, 11, 17, 11, 16, 11, 16, 13, 576, 22513, 374, 518, 9892, 220, 18, 323, 220, 19, 320, 16, 5980, 568, 2055, 979, 582, 5545, 279, 2086, 220, 16, 518, 2309, 220, 19, 11, 279, 1191, 1035, 614, 311, 387, 738, 311, 2309, 220, 18, 13, 2055, 279, 7192, 3241, 1588, 1035, 387, 9892, 220, 16, 12, 18, 320, 4129, 220, 18, 8, 476, 220, 17, 12, 18, 320, 4129, 220, 17, 701, 773, 220, 18, 382, 80022, 13, 2055, 8365, 279, 5486, 374, 311, 3754, 279, 1191, 315, 279, 1482, 2697, 3241, 13, 576, 3241, 374, 2697, 421, 1052, 525, 902, 1378, 23921, 5424, 279, 1852, 13, 2055, 1246, 653, 582, 10306, 429, 1939, 92014, 11, 279, 2697, 3241, 646, 944, 614, 894, 1378, 23921, 42328, 13, 2055, 11, 15356, 582, 912, 264, 501, 2392, 311, 279, 3241, 11, 582, 1779, 421, 432, 594, 279, 1852, 438, 279, 3681, 2392, 304, 279, 3241, 13, 1416, 432, 374, 11, 1221, 279, 1482, 3241, 594, 1191, 1969, 387, 23368, 311, 279, 3681, 2309, 320, 704, 429, 279, 501, 3241, 8471, 1283, 279, 3681, 2392, 568, 1988, 3783, 11, 7196, 582, 1184, 311, 3754, 279, 2309, 1380, 279, 1537, 22513, 10017, 382, 14190, 11, 1588, 594, 458, 4522, 13, 576, 7192, 3204, 2697, 8500, 374, 10838, 553, 279, 9892, 1380, 23921, 42328, 12170, 13, 576, 22032, 10238, 1948, 1378, 1741, 42328, 320, 7138, 279, 10335, 8, 1035, 387, 279, 7192, 3084, 382, 4416, 11, 279, 12111, 646, 2506, 3754, 315, 279, 1191, 315, 279, 1482, 3241, 13, 58556, 11, 1191, 374, 220, 15, 13, 5005, 11, 369, 1817, 600, 504, 220, 16, 311, 308, 12, 16, 1447, 12, 421, 264, 989, 60, 621, 264, 989, 12, 16, 1125, 1221, 279, 1482, 3241, 646, 944, 2924, 2176, 11, 773, 279, 1790, 3241, 594, 1191, 374, 600, 13, 1988, 1948, 1191, 323, 600, 11, 279, 1482, 3241, 374, 504, 1191, 311, 600, 12, 16, 11, 323, 582, 646, 11047, 279, 3084, 13, 13824, 11, 714, 1246, 1939, 92014, 11, 15356, 264, 22513, 374, 1730, 320, 64, 989, 60, 621, 264, 989, 12, 16, 9719, 582, 5185, 429, 279, 1482, 3241, 10335, 518, 600, 12, 16, 13, 5005, 279, 501, 3241, 8471, 518, 600, 13, 1988, 304, 419, 1142, 11, 279, 7192, 3084, 1410, 387, 279, 7192, 315, 279, 3681, 7192, 323, 279, 1482, 3241, 594, 3084, 382, 3983, 1128, 911, 5048, 1380, 1052, 525, 5248, 42328, 30, 1752, 3110, 11, 220, 16, 11, 17, 11, 18, 11, 18, 11, 17, 11, 17, 11, 16, 13, 576, 42328, 525, 518, 220, 18, 12, 19, 320, 18, 323, 220, 18, 8, 323, 220, 20, 12, 21, 320, 17, 323, 220, 17, 568, 2055, 279, 11030, 1035, 387, 504, 220, 15, 12, 17, 320, 4129, 220, 18, 701, 1221, 220, 18, 12, 18, 320, 4129, 220, 16, 701, 1221, 220, 19, 12, 19, 320, 4129, 220, 16, 701, 1221, 220, 20, 12, 20, 320, 4129, 220, 16, 701, 1221, 220, 21, 12, 21, 320, 4129, 220, 16, 568, 1988, 279, 7192, 1035, 387, 220, 18, 13, 1988, 7196, 1052, 594, 264, 5021, 3241, 304, 1948, 13, 13824, 11, 279, 1156, 3241, 374, 220, 15, 12, 17, 11, 1221, 1283, 279, 1156, 22513, 518, 220, 18, 11, 279, 1191, 10797, 311, 220, 18, 13, 1988, 1221, 11, 279, 1790, 5424, 525, 220, 18, 11, 17, 13, 2055, 518, 600, 28, 19, 11, 279, 2392, 374, 220, 17, 13, 4248, 421, 432, 594, 6144, 311, 264, 989, 12, 16, 60, 320, 18, 568, 2308, 11, 773, 279, 3241, 646, 2924, 220, 18, 323, 220, 19, 13, 5005, 518, 600, 28, 20, 320, 6101, 220, 17, 701, 264, 989, 60, 374, 6144, 311, 264, 989, 12, 16, 1125, 773, 279, 3241, 504, 220, 18, 311, 220, 19, 320, 4129, 220, 17, 8, 374, 6509, 11, 323, 1191, 10797, 311, 220, 20, 13, 5005, 600, 28, 21, 11, 264, 989, 60, 374, 220, 16, 961, 264, 989, 12, 16, 60, 320, 17, 701, 773, 279, 3241, 374, 220, 20, 311, 220, 21, 13, 2055, 279, 7192, 374, 1932, 7, 18, 11, 220, 17, 11, 220, 17, 8, 892, 374, 220, 18, 13, 1988, 304, 279, 5042, 1334, 11, 279, 22032, 2697, 10238, 374, 220, 17, 11, 18, 11, 17, 320, 27436, 220, 16, 12, 18, 8, 892, 374, 3084, 220, 18, 11, 714, 7196, 358, 2776, 7402, 2494, 382, 14190, 11, 8365, 279, 5486, 374, 7402, 1045, 23607, 13, 9211, 979, 264, 22513, 374, 1730, 11, 279, 501, 3241, 8471, 518, 600, 11, 714, 7196, 1052, 594, 264, 5021, 3241, 429, 8471, 1573, 600, 13, 1752, 3110, 11, 421, 1052, 594, 264, 1293, 14501, 2041, 42328, 11, 714, 1052, 572, 264, 22513, 1753, 6788, 11, 279, 3241, 1410, 1191, 1283, 279, 3681, 22513, 714, 1573, 279, 1482, 825, 382, 14190, 11, 8365, 279, 4396, 5486, 374, 311, 3754, 279, 2309, 315, 279, 1537, 31559, 1380, 264, 22513, 6932, 13, 6771, 752, 1744, 1549, 382, 14037, 5486, 25, 1752, 1817, 2309, 600, 11, 279, 22032, 2697, 3241, 13391, 518, 600, 374, 2987, 279, 3241, 13391, 518, 600, 12, 16, 11577, 553, 600, 320, 333, 264, 989, 60, 961, 264, 989, 12, 16, 9719, 476, 264, 501, 3241, 5916, 518, 600, 12, 16, 323, 600, 320, 333, 264, 989, 60, 621, 264, 989, 12, 16, 1125, 714, 429, 646, 944, 387, 949, 315, 279, 1852, 3241, 568, 13824, 11, 902, 13, 1416, 264, 989, 60, 16819, 264, 989, 12, 16, 1125, 1221, 279, 3241, 13391, 518, 600, 646, 944, 387, 5021, 1091, 220, 16, 320, 11284, 279, 1378, 23942, 5424, 525, 1852, 568, 13824, 11, 902, 11, 1576, 304, 429, 1142, 11, 279, 3241, 646, 944, 2924, 2176, 13, 2055, 369, 3110, 11, 421, 279, 1482, 2392, 374, 279, 1852, 438, 3681, 11, 1221, 279, 7192, 3241, 13391, 1588, 374, 220, 16, 320, 4250, 279, 1482, 2392, 8, 476, 7196, 279, 1191, 702, 311, 387, 23368, 382, 14190, 11, 7196, 419, 646, 387, 61553, 1667, 8741, 15473, 13, 6771, 594, 6979, 11329, 989, 60, 438, 279, 3084, 315, 279, 22032, 2697, 3241, 13391, 518, 2309, 600, 382, 12209, 11, 369, 1817, 600, 2604, 16, 1447, 333, 264, 989, 60, 961, 264, 989, 12, 16, 1125, 1221, 11329, 989, 60, 284, 11329, 989, 12, 16, 60, 488, 220, 16, 382, 1503, 11, 11329, 989, 60, 284, 220, 16, 11, 2474, 279, 3241, 646, 944, 2924, 2176, 600, 323, 600, 12, 16, 11, 773, 279, 3241, 8471, 518, 600, 382, 3983, 419, 4977, 311, 10034, 1045, 23607, 13, 1752, 3110, 11, 2908, 264, 8500, 1075, 220, 16, 11, 17, 11, 16, 11, 17, 13, 576, 11329, 1334, 1035, 387, 220, 16, 11, 17, 11, 18, 11, 19, 11, 892, 374, 4396, 13, 1416, 279, 8500, 374, 220, 16, 11, 17, 11, 17, 11, 18, 11, 1221, 11329, 58, 16, 60, 284, 17, 11, 11329, 58, 17, 60, 284, 16, 320, 11284, 220, 17, 28, 17, 701, 1221, 11329, 58, 18, 60, 284, 17, 320, 11284, 220, 18, 961, 17, 568, 2055, 279, 7192, 374, 220, 17, 11, 892, 374, 4396, 382, 14190, 11, 714, 279, 3110, 2661, 304, 279, 3491, 374, 979, 279, 1946, 374, 220, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 13, 6771, 594, 12564, 279, 11329, 1334, 1447, 31941, 320, 15, 5980, 7731, 15, 25, 220, 16, 320, 9796, 58, 15, 60, 284, 16, 692, 16, 25, 17, 961, 16, 11397, 11329, 28, 17, 271, 17, 25, 18, 961, 17, 11397, 11329, 28, 18, 271, 18, 25, 18, 621, 18, 11397, 11329, 28, 16, 320, 2468, 518, 220, 18, 692, 19, 25, 17, 961, 18, 11397, 11329, 28, 17, 320, 18, 311, 19, 692, 20, 25, 16, 961, 17, 11397, 11329, 28, 18, 320, 18, 11, 19, 11, 20, 692, 21, 25, 17, 961, 16, 11397, 11329, 28, 19, 320, 18, 11, 19, 11, 20, 11, 21, 692, 22, 25, 17, 621, 17, 11397, 11329, 28, 16, 320, 2468, 518, 22, 692, 4416, 279, 7192, 374, 220, 19, 11, 892, 9071, 279, 3110, 13, 2055, 419, 5486, 4977, 311, 975, 13, 5005, 279, 7192, 315, 279, 11329, 1334, 374, 279, 4226, 13, 2055, 419, 4977, 1075, 264, 2697, 6291, 382, 4416, 279, 12111, 1035, 387, 311, 12564, 279, 11329, 1334, 438, 11017, 1447, 9928, 11329, 58, 15, 60, 284, 16, 382, 2461, 600, 504, 220, 16, 311, 308, 12, 16, 1447, 333, 264, 989, 60, 961, 264, 989, 12, 16, 1125, 1221, 11329, 989, 60, 284, 11329, 989, 12, 16, 60, 488, 16, 382, 1503, 11, 11329, 989, 60, 284, 16, 382, 12209, 279, 7192, 897, 304, 279, 11329, 1334, 374, 279, 4226, 382, 1986, 5486, 374, 506, 1445, 8, 882, 323, 506, 1445, 8, 3550, 13, 1988, 308, 646, 387, 705, 311, 220, 16, 68, 20, 13, 1752, 13027, 11, 220, 16, 68, 20, 5424, 374, 70028, 11, 714, 7196, 582, 646, 29436, 279, 3550, 13, 9211, 582, 1172, 1184, 279, 3681, 897, 11, 537, 279, 4453, 1334, 382, 4416, 4518, 315, 27572, 279, 4453, 11329, 1334, 11, 582, 646, 3754, 279, 1482, 3084, 323, 279, 7192, 382, 9928, 1932, 6043, 284, 16, 11, 1482, 6043, 28, 16, 382, 2461, 600, 504, 220, 16, 311, 308, 12, 16, 1447, 333, 264, 989, 60, 961, 264, 989, 12, 16, 1125, 1482, 6043, 1421, 16, 382, 1503, 11, 1482, 6043, 284, 16, 382, 3391, 11, 2647, 1932, 6043, 421, 1482, 6043, 374, 8131, 382, 9454, 11, 419, 4278, 13, 9211, 1817, 882, 264, 22513, 374, 1730, 11, 279, 1482, 8500, 374, 10865, 11, 323, 279, 1790, 3204, 8500, 8471, 518, 279, 1482, 2309, 382, 4416, 279, 2038, 1035, 387, 1447, 77, 11, 595, 284, 2415, 1548, 11, 1946, 1005, 6960, 2398, 64, 284, 1140, 9147, 1548, 11, 1946, 1005, 6960, 49962, 333, 308, 621, 15, 510, 262, 1173, 7, 15, 340, 1503, 510, 262, 1932, 6043, 284, 220, 16, 198, 262, 1482, 284, 16, 198, 262, 369, 600, 304, 2088, 7, 16, 11, 308, 982, 286, 421, 264, 989, 60, 961, 264, 989, 12, 16, 10343, 310, 1482, 1421, 16, 198, 286, 770, 510, 310, 1482, 284, 16, 198, 286, 421, 1482, 861, 1932, 6043, 510, 310, 1932, 6043, 284, 1482, 198, 262, 1173, 8739, 6043, 692, 14190, 11, 714, 3783, 13, 6771, 594, 1273, 419, 2038, 2348, 279, 3110, 382, 785, 3110, 1946, 1447, 23, 220, 18, 271, 16, 220, 17, 220, 18, 220, 18, 220, 17, 220, 16, 220, 17, 220, 17, 271, 785, 2038, 1035, 1882, 279, 1334, 438, 11017, 1447, 72, 28, 16, 320, 64, 58, 16, 4833, 17, 961, 16, 11397, 1482, 28, 17, 11, 1932, 28, 17, 692, 72, 28, 17, 320, 18, 145129, 17, 11397, 1482, 28, 18, 11, 1932, 28, 18, 692, 72, 28, 18, 320, 18, 28, 18, 11397, 1482, 28, 16, 11, 1932, 8458, 220, 18, 692, 72, 28, 19, 320, 17, 145129, 18, 11397, 1482, 28, 17, 692, 72, 28, 20, 320, 16, 145129, 17, 11397, 1482, 28, 18, 692, 72, 28, 21, 320, 17, 145129, 16, 11397, 1482, 28, 19, 11397, 1932, 9044, 19, 692, 72, 28, 22, 320, 17, 28, 17, 11397, 1482, 28, 16, 692, 4416, 279, 1932, 374, 220, 19, 11, 892, 374, 4396, 382, 14037, 1273, 1142, 25, 508, 16, 11, 16, 2533, 785, 2038, 8471, 448, 1482, 28, 16, 13, 5005, 600, 28, 16, 25, 264, 58, 16, 60, 621, 264, 58, 15, 1125, 1482, 28, 16, 13, 7487, 8458, 220, 16, 13, 2055, 2550, 374, 220, 16, 382, 14037, 1273, 1142, 25, 508, 16, 11, 17, 11, 16, 11, 16, 936, 576, 2038, 1035, 1882, 1447, 72, 28, 16, 25, 220, 17, 145129, 16, 11397, 1482, 28, 17, 11, 1932, 28, 17, 382, 72, 28, 17, 25, 16, 145129, 17, 11397, 1482, 28, 18, 11, 1932, 28, 18, 382, 72, 28, 18, 25, 16, 621, 16, 11397, 1482, 28, 16, 13, 2055, 279, 1932, 374, 220, 18, 382, 23085, 374, 4396, 1576, 279, 22032, 2697, 8500, 374, 220, 16, 11, 17, 11, 16, 320, 27436, 220, 15, 12, 17, 3593, 4416, 419, 5486, 4977, 311, 975, 382, 4416, 279, 2038, 646, 387, 5326, 438, 1447, 4418, 308, 323, 595, 382, 4418, 279, 1140, 264, 382, 6999, 6821, 1142, 979, 308, 374, 220, 15, 320, 8088, 4092, 311, 3491, 5114, 11, 308, 374, 518, 3245, 220, 16, 3593, 9928, 1932, 6043, 323, 1482, 311, 220, 16, 382, 14620, 504, 220, 16, 311, 308, 12, 16, 1447, 256, 9429, 1482, 323, 3681, 382, 256, 2647, 1482, 382, 256, 2647, 1932, 382, 23949, 11, 1173, 1932, 6043, 382, 1986, 374, 506, 1445, 8, 882, 323, 506, 7, 16, 8, 3550, 13, 15920, 374, 11050, 369, 308, 705, 311, 220, 16, 68, 20, 382, 4416, 279, 2038, 1265, 975, 624, 522, 26865, 1339, 73594, 12669, 198, 77, 11, 595, 284, 2415, 1548, 11, 1946, 1005, 6960, 2398, 64, 284, 1140, 9147, 1548, 11, 1946, 1005, 6960, 49962, 2810, 6043, 284, 220, 16, 198, 3231, 284, 220, 16, 271, 1958, 600, 304, 2088, 7, 16, 11, 308, 982, 262, 421, 264, 989, 60, 961, 264, 989, 12, 16, 10343, 286, 1482, 1421, 220, 16, 198, 262, 770, 510, 286, 1482, 284, 220, 16, 198, 262, 421, 1482, 861, 1932, 6043, 510, 286, 1932, 6043, 284, 1482, 271, 1350, 8739, 6043, 340, 73594, 151645, 198]
+labels:
+<think>
+Okay, let's see. The problem is to find the longest segment of houses where no two adjacent houses have the same color. Hmm. So, how do I approach this?
+
+I remember that for sequences with constraints on adjacent elements, sliding window techniques can be useful. Like, expanding a window as long as the condition holds, and moving the start when it breaks. But in this case, the condition is that consecutive elements are different. So, whenever two consecutive elements in the current window are the same, the window has to adjust.
+
+Wait, but maybe I need to track the positions where consecutive duplicates occur. For example, if in the window, the previous element is the same as the current one, then the window can't include both. So, the maximum valid window would be between two such duplicates.
+
+Alternatively, maybe the approach is to keep track of the current run's start. Like, whenever we find two consecutive elements that are the same, we need to reset the start to the position between them. Let me think.
+
+Let's take the example input: 1 2 3 3 2 1 2 2. The output is 4. The segment from index 3 to 6 (0-based) is 3,2,1,2. Wait, the example says house 4 to 7, which is indices 3 to 6 in 0-based. So the length is 4.
+
+How does that sequence work? The previous elements before the first 3 (the third element) are 1,2,3. Then the next 3 is a duplicate. So the current window would end at the first 3. Then the next start is at the second 3? But that's a problem. Wait, maybe the idea is that whenever a duplicate is found, the new start is set to the previous index. Let's see.
+
+Another example: suppose the sequence is 1,1. The maximum length is 1. But if the sequence is 1,2,1, the maximum is 3. So the algorithm should track the start of the current valid window and update it whenever a duplicate is found.
+
+Wait, perhaps the key is to track the last occurrence where a duplicate was found. Let's think of the current window as [left, right]. For each position right, we check if the current element a[right] is equal to a[right-1]. If yes, then the next valid window must start at right. Otherwise, the window can continue.
+
+Wait, no. Because duplicates can be not just at right-1 and right. For example, if the sequence is 1,2,1,1. The duplicate is at positions 3 and 4 (1-based). So when we reach the second 1 at position 4, the start would have to be set to position 3. So the maximum window here would be positions 1-3 (length 3) or 2-3 (length 2), so 3.
+
+Hmm. So perhaps the approach is to track the start of the current valid window. The window is valid if there are no two consecutive elements the same. So how do we maintain that?
+
+Alternatively, the valid window can't have any two consecutive duplicates. So, whenever we add a new element to the window, we check if it's the same as the previous element in the window. If it is, then the current window's start must be adjusted to the previous position (so that the new window starts after the previous element). But wait, maybe we need to track the position where the last duplicate occurred.
+
+Wait, here's an idea. The maximum possible valid sequence is determined by the positions where consecutive duplicates occur. The longest segment between two such duplicates (plus the ends) would be the maximum length.
+
+So, the algorithm can keep track of the start of the current window. Initially, start is 0. Then, for each i from 1 to n-1:
+
+- if a[i] == a[i-1], then the current window can't include both, so the next window's start is i. But between start and i, the current window is from start to i-1, and we can calculate the length. Wait, but how?
+
+Alternatively, whenever a duplicate is found (a[i] == a[i-1]), we note that the current window ends at i-1. Then the new window starts at i. But in this case, the maximum length could be the maximum of the previous maximum and the current window's length.
+
+But what about cases where there are multiple duplicates? For example, 1,2,3,3,2,2,1. The duplicates are at 3-4 (3 and 3) and 5-6 (2 and 2). So the windows would be from 0-2 (length 3), then 3-3 (length 1), then 4-4 (length 1), then 5-5 (length 1), then 6-6 (length 1). But the maximum would be 3. But maybe there's a longer window in between. Wait, the first window is 0-2, then after the first duplicate at 3, the start moves to 3. But then, the next elements are 3,2. So at i=4, the element is 2. Check if it's equal to a[i-1] (3). No, so the window can include 3 and 4. Then at i=5 (element 2), a[i] is equal to a[i-1], so the window from 3 to 4 (length 2) is considered, and start moves to 5. Then i=6, a[i] is 1 != a[i-1] (2), so the window is 5 to 6. So the maximum is max(3, 2, 2) which is 3. But in the actual array, the longest valid segment is 2,3,2 (positions 1-3) which is length 3, but maybe I'm missing something.
+
+Wait, perhaps the approach is missing some possibilities. Because when a duplicate is found, the new window starts at i, but maybe there's a longer window that starts before i. For example, if there's a long stretch without duplicates, but there was a duplicate much earlier, the window could start after the previous duplicate but before the current one.
+
+Wait, perhaps the correct approach is to track the position of the last occurrence where a duplicate happened. Let me think again.
+
+Another approach: For each position i, the longest valid window ending at i is either the window ending at i-1 extended by i (if a[i] != a[i-1]), or a new window starting at i-1 and i (if a[i] == a[i-1], but that can't be part of the same window). Wait, no. If a[i] equals a[i-1], then the window ending at i can't be longer than 1 (since the two adjacent elements are same). Wait, no, because in that case, the window can't include both. So for example, if the current element is the same as previous, then the maximum window ending here is 1 (just the current element) or maybe the start has to be adjusted.
+
+Wait, maybe this can be modeled using dynamic programming. Let's define dp[i] as the length of the longest valid window ending at position i.
+
+Then, for each i >=1:
+
+if a[i] != a[i-1], then dp[i] = dp[i-1] + 1.
+
+else, dp[i] = 1, since the window can't include both i and i-1, so the window starts at i.
+
+But this seems to ignore some possibilities. For example, consider a sequence like 1,2,1,2. The dp array would be 1,2,3,4, which is correct. If the sequence is 1,2,2,3, then dp[1] =2, dp[2] =1 (since 2=2), then dp[3] =2 (since 3 !=2). So the maximum is 2, which is correct.
+
+Wait, but the example given in the problem is when the input is 1 2 3 3 2 1 2 2. Let's compute the dp array:
+
+Indices (0-based):
+
+0: 1 (dp[0] =1)
+
+1:2 !=1 → dp=2
+
+2:3 !=2 → dp=3
+
+3:3 ==3 → dp=1 (start at 3)
+
+4:2 !=3 → dp=2 (3 to4)
+
+5:1 !=2 → dp=3 (3,4,5)
+
+6:2 !=1 → dp=4 (3,4,5,6)
+
+7:2 ==2 → dp=1 (start at7)
+
+So the maximum is 4, which matches the example. So this approach seems to work. Then the maximum of the dp array is the answer. So this seems like a valid solution.
+
+So the algorithm would be to compute the dp array as follows:
+
+Initialize dp[0] =1.
+
+For i from 1 to n-1:
+
+if a[i] != a[i-1], then dp[i] = dp[i-1] +1.
+
+else, dp[i] =1.
+
+Then the maximum value in the dp array is the answer.
+
+This approach is O(n) time and O(n) space. But n can be up to 1e5. For Python, 1e5 elements is manageable, but maybe we can optimize the space. Because we only need the previous value, not the entire array.
+
+So instead of storing the entire dp array, we can track the current length and the maximum.
+
+Initialize max_len =1, current_len=1.
+
+For i from 1 to n-1:
+
+if a[i] != a[i-1], current_len +=1.
+
+else, current_len =1.
+
+then, update max_len if current_len is larger.
+
+Yes, this works. Because each time a duplicate is found, the current sequence is broken, and the next possible sequence starts at the current position.
+
+So the code would be:
+
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+
+if n ==0:
+    print(0)
+else:
+    max_len = 1
+    current =1
+    for i in range(1, n):
+        if a[i] != a[i-1]:
+            current +=1
+        else:
+            current =1
+        if current > max_len:
+            max_len = current
+    print(max_len)
+
+Wait, but wait. Let's test this code against the example.
+
+The example input:
+
+8 3
+
+1 2 3 3 2 1 2 2
+
+The code would process the array as follows:
+
+i=1 (a[1]=2 !=1 → current=2, max=2)
+
+i=2 (3≠2 → current=3, max=3)
+
+i=3 (3=3 → current=1, max remains 3)
+
+i=4 (2≠3 → current=2)
+
+i=5 (1≠2 → current=3)
+
+i=6 (2≠1 → current=4 → max becomes4)
+
+i=7 (2=2 → current=1)
+
+So the max is 4, which is correct.
+
+Another test case: [1,1]
+
+The code starts with current=1. Then i=1: a[1] == a[0], current=1. Max remains 1. So output is 1.
+
+Another test case: [1,2,1,1]. The code would process:
+
+i=1: 2≠1 → current=2, max=2.
+
+i=2:1≠2 → current=3, max=3.
+
+i=3:1 ==1 → current=1. So the max is 3.
+
+Which is correct because the longest valid sequence is 1,2,1 (positions 0-2).
+
+So this approach seems to work.
+
+So the code can be written as:
+
+Read n and k.
+
+Read the list a.
+
+Handle edge case when n is 0 (but according to problem statement, n is at least 1).
+
+Initialize max_len and current to 1.
+
+Loop from 1 to n-1:
+
+   compare current and previous.
+
+   update current.
+
+   update max.
+
+Finally, print max_len.
+
+This is O(n) time and O(1) space. Which is efficient for n up to 1e5.
+
+So the code should work.
+</think>
+
+```python
+n, k = map(int, input().split())
+a = list(map(int, input().split()))
+
+max_len = 1
+current = 1
+
+for i in range(1, n):
+    if a[i] != a[i-1]:
+        current += 1
+    else:
+        current = 1
+    if current > max_len:
+        max_len = current
+
+print(max_len)
+```<|im_end|>
+
+[INFO|configuration_utils.py:752] 2026-10-27 05:29:42,658 >> loading configuration file config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/config.json
+[INFO|configuration_utils.py:817] 2026-10-27 05:29:42,659 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|2026-10-27 05:29:42] llamafactory.model.model_utils.kv_cache:143 >> KV cache is disabled during training.
+[INFO|modeling_utils.py:1308] 2026-10-27 05:29:43,793 >> loading weights file model.safetensors from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/model.safetensors.index.json
+[INFO|modeling_utils.py:4363] 2026-10-27 05:29:43,805 >> Detected DeepSpeed ZeRO-3: activating zero.init() for this model
+[2026-10-27 05:29:43,805] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 1
+[WARNING|logging.py:328] 2026-10-27 05:29:43,814 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2ForCausalLM is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[INFO|configuration_utils.py:1098] 2026-10-27 05:29:43,815 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "use_cache": false
+}
+
+[WARNING|logging.py:328] 2026-10-27 05:29:43,817 >> Flash Attention 2 only supports torch.float16 and torch.bfloat16 dtypes, but the current dype in Qwen2Model is torch.float32. You should run training or inference using Automatic Mixed-Precision via the `with torch.autocast(device_type='torch_device'):` decorator, or load the model with the `torch_dtype` argument. Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="flash_attention_2", torch_dtype=torch.float16)`
+[2026-10-27 05:29:47,576] [INFO] [partition_parameters.py:348:__exit__] finished initializing model - num_params = 435, num_elems = 3.40B
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.19it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.60it/s]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:01<00:00,  1.52it/s]
+[INFO|modeling_utils.py:5606] 2026-10-27 05:29:48,928 >> All model checkpoint weights were used when initializing Qwen2ForCausalLM.
+
+[INFO|modeling_utils.py:5614] 2026-10-27 05:29:48,928 >> All the weights of Qwen2ForCausalLM were initialized from the model checkpoint at Qwen/Qwen2.5-3B-Instruct.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2ForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:1053] 2026-10-27 05:29:48,976 >> loading configuration file generation_config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/generation_config.json
+[INFO|configuration_utils.py:1098] 2026-10-27 05:29:48,976 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "repetition_penalty": 1.05,
+  "temperature": 0.7,
+  "top_k": 20,
+  "top_p": 0.8
+}
+
+[INFO|2026-10-27 05:29:49] llamafactory.model.model_utils.checkpointing:143 >> Gradient checkpointing enabled.
+[INFO|2026-10-27 05:29:49] llamafactory.model.model_utils.attention:143 >> Using FlashAttention-2 for faster training and inference.
+[INFO|2026-10-27 05:29:49] llamafactory.model.adapter:143 >> DeepSpeed ZeRO3 detected, remaining trainable params in float32.
+[INFO|2026-10-27 05:29:49] llamafactory.model.adapter:143 >> Fine-tuning method: Full
+[INFO|2026-10-27 05:29:49] llamafactory.model.loader:143 >> trainable params: 3,085,938,688 || all params: 3,085,938,688 || trainable%: 100.0000
+[INFO|trainer.py:757] 2026-10-27 05:29:49,049 >> Using auto half precision backend
+[INFO|deepspeed.py:380] 2026-10-27 05:29:49,345 >> Detected ZeRO Offload and non-DeepSpeed optimizers: This combination should work as long as the custom optimizer has both CPU and GPU implementation (except LAMB)
+Using /home/vikmuru/.cache/torch_extensions/py310_cu128 as PyTorch extensions root...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /home/vikmuru/.cache/torch_extensions/py310_cu128/cpu_adam/build.ninja...
+/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/utils/cpp_extension.py:2356: UserWarning: TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'].
+  warnings.warn(
+Building extension module cpu_adam...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module cpu_adam...
+Time to load cpu_adam op: 0.38189053535461426 seconds
+Adam Optimizer #0 is created with AVX512 arithmetic capability.
+Config: alpha=0.000005, betas=(0.900000, 0.999000), weight_decay=0.010000, adam_w=1
+[2026-10-27 05:29:49,978] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed info: version=0.16.8, git-hash=unknown, git-branch=unknown
+[2026-10-27 05:29:49,978] [INFO] [config.py:735:__init__] Config mesh_device None world_size = 1
+[2026-10-27 05:29:49,986] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2026-10-27 05:29:49,986] [INFO] [logging.py:107:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2026-10-27 05:29:49,986] [INFO] [logging.py:107:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2026-10-27 05:29:50,031] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Basic Optimizer = DeepSpeedCPUAdam
+[2026-10-27 05:29:50,031] [INFO] [utils.py:59:is_zero_supported_optimizer] Checking ZeRO support for optimizer=DeepSpeedCPUAdam type=<class 'deepspeed.ops.adam.cpu_adam.DeepSpeedCPUAdam'>
+[2026-10-27 05:29:50,031] [INFO] [logging.py:107:log_dist] [Rank 0] Creating fp16 ZeRO stage 3 optimizer, MiCS is enabled False, Hierarchical params gather False
+[2026-10-27 05:29:50,031] [INFO] [logging.py:107:log_dist] [Rank 0] Creating torch.bfloat16 ZeRO stage 3 optimizer
+[2026-10-27 05:29:50,264] [INFO] [utils.py:781:see_memory_usage] Stage 3 initialize beginning
+[2026-10-27 05:29:50,264] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 1.74 GB         CA 0.0 GB         Max_CA 2 GB 
+[2026-10-27 05:29:50,265] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 72.11 GB, percent = 3.6%
+[2026-10-27 05:29:50,266] [INFO] [stage3.py:170:__init__] Reduce bucket size 4194304
+[2026-10-27 05:29:50,266] [INFO] [stage3.py:171:__init__] Prefetch bucket size 3774873
+[2026-10-27 05:29:50,499] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [begin]
+[2026-10-27 05:29:50,500] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:50,500] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 72.11 GB, percent = 3.6%
+Parameter Offload: Total persistent parameters: 241664 in 181 params
+[2026-10-27 05:29:50,789] [INFO] [utils.py:781:see_memory_usage] DeepSpeedZeRoOffload initialize [end]
+[2026-10-27 05:29:50,790] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:50,790] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 72.11 GB, percent = 3.6%
+[2026-10-27 05:29:51,060] [INFO] [utils.py:781:see_memory_usage] Before creating fp16 partitions
+[2026-10-27 05:29:51,061] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:51,061] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 72.11 GB, percent = 3.6%
+/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[2026-10-27 05:29:53,986] [INFO] [utils.py:781:see_memory_usage] After creating fp16 partitions: 5
+[2026-10-27 05:29:53,987] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:53,987] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 80.28 GB, percent = 4.0%
+[2026-10-27 05:29:54,235] [INFO] [utils.py:781:see_memory_usage] Before creating fp32 partitions
+[2026-10-27 05:29:54,235] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:54,235] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 80.28 GB, percent = 4.0%
+[2026-10-27 05:29:55,875] [INFO] [utils.py:781:see_memory_usage] After creating fp32 partitions
+[2026-10-27 05:29:55,876] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:55,876] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 89.88 GB, percent = 4.5%
+[2026-10-27 05:29:56,259] [INFO] [utils.py:781:see_memory_usage] Before initializing optimizer states
+[2026-10-27 05:29:56,260] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:29:56,261] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 89.99 GB, percent = 4.5%
+[2026-10-27 05:30:03,964] [INFO] [utils.py:781:see_memory_usage] After initializing optimizer states
+[2026-10-27 05:30:03,965] [INFO] [utils.py:782:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2026-10-27 05:30:03,965] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 106.0 GB, percent = 5.3%
+[2026-10-27 05:30:03,966] [INFO] [stage3.py:534:_setup_for_real_optimizer] optimizer state initialized
+[2026-10-27 05:30:08,152] [INFO] [utils.py:781:see_memory_usage] After initializing ZeRO optimizer
+[2026-10-27 05:30:08,153] [INFO] [utils.py:782:see_memory_usage] MA 0.01 GB         Max_MA 1.17 GB         CA 1.18 GB         Max_CA 1 GB 
+[2026-10-27 05:30:08,154] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 120.45 GB, percent = 6.0%
+[2026-10-27 05:30:08,154] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed Final Optimizer = DeepSpeedZeroOptimizer_Stage3
+[2026-10-27 05:30:08,154] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed using configured LR scheduler = None
+[2026-10-27 05:30:08,154] [INFO] [logging.py:107:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2026-10-27 05:30:08,154] [INFO] [logging.py:107:log_dist] [Rank 0] step=0, skipped=0, lr=[5e-06, 5e-06], mom=[(0.9, 0.999), (0.9, 0.999)]
+[2026-10-27 05:30:08,156] [INFO] [config.py:1003:print] DeepSpeedEngine configuration:
+[2026-10-27 05:30:08,156] [INFO] [config.py:1007:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2026-10-27 05:30:08,156] [INFO] [config.py:1007:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'intra_op_parallelism': 1, 'single_submit': False, 'overlap_events': True, 'use_gds': False}
+[2026-10-27 05:30:08,156] [INFO] [config.py:1007:print]   amp_enabled .................. False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   amp_params ................... False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   bfloat16_enabled ............. True
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   bfloat16_immediate_grad_update  True
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   checkpoint_parallel_write_pipeline  False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   checkpoint_tag_validation_enabled  True
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   checkpoint_tag_validation_fail  False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x1551cb4678b0>
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   communication_data_type ...... None
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   compile_config ............... deepcompile=False free_activation=False offload_activation=False offload_opt_states=False double_buffer=True symmetric_memory=False debug_log=False offload_parameters=False sync_before_reduce=False sync_after_reduce=False sync_before_allgather=False sync_after_allgather=False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   curriculum_enabled_legacy .... False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   curriculum_params_legacy ..... False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'pin_memory': False, 'curriculum_learning': {'enabled': False}, 'dynamic_batching': {'enabled': False, 'lr_scaling_method': 'linear', 'min_batch_size': 1, 'max_batch_size': None, 'sequence_picking_order': 'dataloader', 'verbose': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   data_efficiency_enabled ...... False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   dataloader_drop_last ......... False
+[2026-10-27 05:30:08,157] [INFO] [config.py:1007:print]   disable_allgather ............ False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   dump_state ................... False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   dynamic_loss_scale_args ...... None
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_enabled ........... False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_gas_boundary_resolution  1
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_layer_num ......... 0
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_max_iter .......... 100
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_stability ......... 1e-06
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_tol ............... 0.01
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   eigenvalue_verbose ........... False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   elasticity_enabled ........... False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   fp16_auto_cast ............... None
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   fp16_enabled ................. False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   fp16_master_weights_and_gradients  False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   global_rank .................. 0
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   grad_accum_dtype ............. None
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   gradient_accumulation_steps .. 8
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   gradient_clipping ............ 1.0
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   gradient_predivide_factor .... 1.0
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   graph_harvesting ............. False
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   initial_dynamic_scale ........ 1
+[2026-10-27 05:30:08,158] [INFO] [config.py:1007:print]   load_universal_checkpoint .... False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   loss_scale ................... 1.0
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   memory_breakdown ............. False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   mics_hierarchial_params_gather  False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   mics_shard_size .............. -1
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName')
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   optimizer_legacy_fusion ...... False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   optimizer_name ............... None
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   optimizer_params ............. None
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   pld_enabled .................. False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   pld_params ................... False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   prescale_gradients ........... False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   scheduler_name ............... None
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   scheduler_params ............. None
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   seq_parallel_communication_data_type  torch.float32
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   sparse_attention ............. None
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   sparse_gradients_enabled ..... False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   steps_per_print .............. inf
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   tensor_parallel_config ....... dtype=torch.float16 autotp_size=0 tp_overlap_comm=False tensor_parallel=TPConfig(tp_size=1, tp_grain_size=1, mpu=None, tp_group=None) injection_policy_tuple=None keep_module_on_host=False replace_with_kernel_inject=False
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   timers_config ................ enabled=True synchronized=True
+[2026-10-27 05:30:08,159] [INFO] [config.py:1007:print]   train_batch_size ............. 8
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   train_micro_batch_size_per_gpu  1
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   use_data_before_expert_parallel_  False
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   use_node_local_storage ....... False
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   wall_clock_breakdown ......... False
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   weight_quantization_config ... None
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   world_size ................... 1
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   zero_allow_untested_optimizer  True
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   zero_config .................. stage=3 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=4194304 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=False load_from_fp32_weights=True elastic_checkpoint=False offload_param=DeepSpeedZeroOffloadParamConfig(device='cpu', nvme_path=None, buffer_count=5, buffer_size=100000000, max_in_cpu=1000000000, pin_memory=True) offload_optimizer=DeepSpeedZeroOffloadOptimizerConfig(device='cpu', nvme_path=None, buffer_count=4, pin_memory=True, pipeline_read=False, pipeline_write=False, fast_init=False, ratio=1.0) sub_group_size=1000000000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=3774873 param_persistence_threshold=20480 model_persistence_threshold=9223372036854775807 max_live_parameters=1000000000 max_reuse_distance=1000000000 gather_16bit_weights_on_model_save=True module_granularity_threshold=0 use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=False zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False zeropp_loco_param=None mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True log_trace_cache_warnings=False
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   zero_enabled ................. True
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   zero_force_ds_cpu_optimizer .. True
+[2026-10-27 05:30:08,160] [INFO] [config.py:1007:print]   zero_optimization_stage ...... 3
+[2026-10-27 05:30:08,160] [INFO] [config.py:993:print_user_config]   json = {
+    "train_batch_size": 8, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 8, 
+    "gradient_clipping": 1.0, 
+    "zero_allow_untested_optimizer": true, 
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "initial_scale_power": 16, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "bf16": {vikmuru
+        "enabled": truevikmuru
+    }, vikmuru
+    "zero_optimization": {vikmuru
+        "stage": 3, vikmuru
+        "offload_optimizer": {vikmuru
+            "device": "cpu", vikmuru
+            "pin_memory": true
+        }, 
+        "offload_param": {
+            "device": "cpu", 
+            "pin_memory": true
+        }, 
+        "overlap_comm": false, 
+        "contiguous_gradients": true, 
+        "sub_group_size": 1.000000e+09, 
+        "reduce_bucket_size": 4.194304e+06, 
+        "stage3_prefetch_bucket_size": 3.774873e+06, 
+        "stage3_param_persistence_threshold": 2.048000e+04, 
+        "stage3_max_live_parameters": 1.000000e+09, 
+        "stage3_max_reuse_distance": 1.000000e+09, 
+        "stage3_gather_16bit_weights_on_model_save": true
+    }, 
+    "steps_per_print": inf
+}
+[INFO|deepspeed.py:492] 2026-10-27 05:30:08,169 >> Attempting to resume from saves/qwen25_3b_instruct/vikmuru/checkpoint-600
+[2026-10-27 05:30:08,181] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from saves/qwen25_3b_instruct/vikmuru/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2026-10-27 05:30:08,215] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from saves/qwen25_3b_instruct/vikmuru/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2026-10-27 05:30:08,215] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from saves/qwen25_3b_instruct/vikmuru/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2026-10-27 05:30:08,233] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from saves/qwen25_3b_instruct/vikmuru/checkpoint-600/global_step600/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2026-10-27 05:30:08,243] [INFO] [torch_checkpoint_engine.py:27:load] [Torch] Loading checkpoint from saves/qwen25_3b_instruct/vikmuru/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2026-10-27 05:31:00,678] [INFO] [torch_checkpoint_engine.py:29:load] [Torch] Loaded checkpoint from saves/qwen25_3b_instruct/vikmuru/checkpoint-600/global_step600/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2026-10-27 05:31:00,679] [INFO] [engine.py:3241:_get_all_zero_checkpoint_state_dicts] successfully read 1 ZeRO state_dicts for rank 0
+[2026-10-27 05:31:01,539] [INFO] [engine.py:3191:_load_zero_checkpoint] loading 1 zero partition checkpoints for rank 0
+[INFO|trainer.py:2433] 2026-10-27 05:31:02,041 >> ***** Running training *****
+[INFO|trainer.py:2434] 2026-10-27 05:31:02,041 >>   Num examples = 15,000
+[INFO|trainer.py:2435] 2026-10-27 05:31:02,041 >>   Num Epochs = 3
+[INFO|trainer.py:2436] 2026-10-27 05:31:02,041 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:2439] 2026-10-27 05:31:02,041 >>   Total train batch size (w. parallel, distributed & accumulation) = 8
+[INFO|trainer.py:2440] 2026-10-27 05:31:02,041 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:2441] 2026-10-27 05:31:02,041 >>   Total optimization steps = 5,625
+[INFO|trainer.py:2442] 2026-10-27 05:31:02,043 >>   Number of trainable parameters = 3,085,938,688
+[INFO|trainer.py:2464] 2026-10-27 05:31:02,045 >>   Continuing training from checkpoint, will skip to saved global_step
+[INFO|trainer.py:2465] 2026-10-27 05:31:02,045 >>   Continuing training from epoch 0
+[INFO|trainer.py:2466] 2026-10-27 05:31:02,045 >>   Continuing training from global step 600
+[INFO|trainer.py:2468] 2026-10-27 05:31:02,045 >>   Will skip the first 0 epochs then the first 4800 batches in the first epoch.
+[INFO|integration_utils.py:866] 2026-10-27 05:31:02,047 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+wandb: [wandb.login()] Loaded credentials for https://api.forge.coreweave.com from /home/vikmuru/.netrc.
+wandb: Currently logged in as: vikmuru (vikmuru-virginia-tech) to https://api.forge.coreweave.com. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.31.0
+wandb: Run data is saved locally in /home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/wandb/run-20261027_053103-jtw4zsx5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run restful-salad-4
+wandb: ⭐️ View project at https://forge.coreweave.com/wandb/vikmuru-virginia-tech/Proj
+wandb: 🚀 View run at https://forge.coreweave.com/wandb/vikmuru-virginia-tech/Proj/runs/jtw4zsx5
+
+  0%|          | 0/5625 [00:00<?, ?it/s]
+ 11%|█         | 601/5625 [00:13<01:52, 44.68it/s]
+                                                  
+{'loss': 0.5609, 'grad_norm': 0.8739377856254578, 'learning_rate': 4.860940925593703e-06, 'epoch': 0.32}
+
+ 11%|█         | 601/5625 [00:13<01:52, 44.68it/s]
+                                                  
+{'loss': 0.5459, 'grad_norm': 0.8265278935432434, 'learning_rate': 4.860481372932667e-06, 'epoch': 0.32}
+
+ 11%|█         | 602/5625 [00:24<01:52, 44.68it/s]
+ 11%|█         | 602/5625 [00:26<01:52, 44.68it/s]
+ 11%|█         | 603/5625 [00:37<06:35, 12.69it/s]
+                                                  
+{'loss': 0.7065, 'grad_norm': 0.8358703851699829, 'learning_rate': 4.860021083970855e-06, 'epoch': 0.32}
+
+ 11%|█         | 603/5625 [00:37<06:35, 12.69it/s]
+ 11%|█         | 604/5625 [00:47<09:28,  8.83it/s]
+                                                  
+{'loss': 0.6599, 'grad_norm': 0.9402326345443726, 'learning_rate': 4.859560058851844e-06, 'epoch': 0.32}
+
+ 11%|█         | 604/5625 [00:47<09:28,  8.83it/s]
+ 11%|█         | 605/5625 [00:59<14:02,  5.96it/s]
+                                                  
+{'loss': 0.6616, 'grad_norm': 0.854260265827179, 'learning_rate': 4.85909829771944e-06, 'epoch': 0.32}
+
+ 11%|█         | 605/5625 [00:59<14:02,  5.96it/s]
+ 11%|█         | 606/5625 [01:10<20:13,  4.14it/s]
+                                                  
+{'loss': 0.6776, 'grad_norm': 0.8894591927528381, 'learning_rate': 4.8586358007176815e-06, 'epoch': 0.32}
+
+ 11%|█         | 606/5625 [01:10<20:13,  4.14it/s]
+ 11%|█         | 607/5625 [01:21<28:47,  2.90it/s]
+                                                  
+{'loss': 0.6843, 'grad_norm': 0.8754765391349792, 'learning_rate': 4.858172567990832e-06, 'epoch': 0.32}
+
+ 11%|█         | 607/5625 [01:21<28:47,  2.90it/s]
+ 11%|█         | 608/5625 [01:33<41:54,  2.00it/s]
+                                                  
+{'loss': 0.5404, 'grad_norm': 0.7455765604972839, 'learning_rate': 4.857708599683389e-06, 'epoch': 0.32}
+
+ 11%|█         | 608/5625 [01:33<41:54,  2.00it/s]
+ 11%|█         | 609/5625 [01:42<56:11,  1.49it/s]
+                                                  
+{'loss': 0.7147, 'grad_norm': 1.0764135122299194, 'learning_rate': 4.857243895940076e-06, 'epoch': 0.32}
+
+ 11%|█         | 609/5625 [01:42<56:11,  1.49it/s]
+ 11%|█         | 610/5625 [01:53<1:18:48,  1.06it/s]
+                                                    
+{'loss': 0.6527, 'grad_norm': 0.9248138666152954, 'learning_rate': 4.856778456905846e-06, 'epoch': 0.33}
+
+ 11%|█         | 610/5625 [01:53<1:18:48,  1.06it/s]
+ 11%|█         | 611/5625 [02:04<1:49:15,  1.31s/it]
+                                                    
+{'loss': 0.5968, 'grad_norm': 0.8415027856826782, 'learning_rate': 4.856312282725886e-06, 'epoch': 0.33}
+
+ 11%|█         | 611/5625 [02:04<1:49:15,  1.31s/it]
+ 11%|█         | 612/5625 [02:16<2:35:20,  1.86s/it]
+                                                    
+{'loss': 0.6012, 'grad_norm': 0.7843413949012756, 'learning_rate': 4.855845373545606e-06, 'epoch': 0.33}
+
+ 11%|█         | 612/5625 [02:16<2:35:20,  1.86s/it]
+ 11%|█         | 613/5625 [02:29<3:36:26,  2.59s/it]
+                                                    
+{'loss': 0.7344, 'grad_norm': 0.8135979771614075, 'learning_rate': 4.855377729510648e-06, 'epoch': 0.33}
+
+ 11%|█         | 613/5625 [02:29<3:36:26,  2.59s/it]
+ 11%|█         | 614/5625 [02:42<4:46:16,  3.43s/it]
+                                                    
+{'loss': 0.5774, 'grad_norm': 0.7478118538856506, 'learning_rate': 4.854909350766887e-06, 'epoch': 0.33}
+
+ 11%|█         | 614/5625 [02:42<4:46:16,  3.43s/it]
+ 11%|█         | 615/5625 [02:53<6:01:58,  4.34s/it]
+                                                    
+{'loss': 0.5042, 'grad_norm': 0.7801864147186279, 'learning_rate': 4.854440237460418e-06, 'epoch': 0.33}
+vikmuru
+ 11%|█         | 615/5625 [02:53<6:01:58,  4.34s/it]vikmuru
+ 11%|█         | 616/5625 [03:03<7:03:24,  5.07s/it]vikmuru
+                                                    vikmuru
+{'loss': 0.5525, 'grad_norm': 0.9987878799438477, 'learning_rate': 4.853970389737576e-06, 'epoch': 0.33}vikmuru
+vikmuru
+ 11%|█         | 616/5625 [03:03<7:03:24,  5.07s/it]vikmuru
+ 11%|█         | 617/5625 [03:15<8:35:07,  6.17s/it]
+                                                    
+{'loss': 0.5787, 'grad_norm': 0.8167033791542053, 'learning_rate': 4.853499807744916e-06, 'epoch': 0.33}
+vikmuru
+ 11%|█         | 617/5625 [03:15<8:35:07,  6.17s/it]vikmuru
+ 11%|█         | 618/5625 [03:28<10:27:10,  7.52s/it]vikmuru
+                                                     vikmuru
+{'loss': 0.7365, 'grad_norm': 0.9080309867858887, 'learning_rate': 4.853028491629228e-06, 'epoch': 0.33}vikmuru
+vikmuru
+ 11%|█         | 618/5625 [03:28<10:27:10,  7.52s/it]
+ 11%|█         | 619/5625 [03:42<12:05:25,  8.69s/it]
+                                                     
+{'loss': 0.658, 'grad_norm': 0.7793225646018982, 'learning_rate': 4.852556441537528e-06, 'epoch': 0.33}
+
+ 11%|█         | 619/5625 [03:42<12:05:25,  8.69s/it]
+ 11%|█         | 620/5625 [03:54<13:10:07,  9.47s/it]
+                                                     
+{'loss': 0.5691, 'grad_norm': 0.7890917658805847, 'learning_rate': 4.852083657617062e-06, 'epoch': 0.33}
+
+ 11%|█         | 620/5625 [03:54<13:10:07,  9.47s/it]
+ 11%|█         | 621/5625 [04:07<14:33:36, 10.47s/it]
+                                                     
+{'loss': 0.6762, 'grad_norm': 0.7872713208198547, 'learning_rate': 4.8516101400153036e-06, 'epoch': 0.33}
+
+ 11%|█         | 621/5625 [04:07<14:33:36, 10.47s/it]
+ 11%|█         | 622/5625 [04:18<14:35:46, 10.50s/it]
+                                                     
+{'loss': 0.6632, 'grad_norm': 0.9441488981246948, 'learning_rate': 4.851135888879958e-06, 'epoch': 0.33}
+
+ 11%|█         | 622/5625 [04:18<14:35:46, 10.50s/it]
+ 11%|█         | 623/5625 [04:28<14:42:08, 10.58s/it]
+                                                     
+{'loss': 0.6309, 'grad_norm': 0.8829623460769653, 'learning_rate': 4.850660904358956e-06, 'epoch': 0.33}
+
+ 11%|█         | 623/5625 [04:28<14:42:08, 10.58s/it]
+ 11%|█         | 624/5625 [04:44<16:29:06, 11.87s/it]
+                                                     
+{'loss': 0.6724, 'grad_norm': 0.7434064149856567, 'learning_rate': 4.85018518660046e-06, 'epoch': 0.33}
+
+ 11%|█         | 624/5625 [04:44<16:29:06, 11.87s/it]
+ 11%|█         | 625/5625 [04:54<15:59:06, 11.51s/it]
+                                                     
+{'loss': 0.5845, 'grad_norm': 1.0636178255081177, 'learning_rate': 4.8497087357528585e-06, 'epoch': 0.33}
+
+ 11%|█         | 625/5625 [04:54<15:59:06, 11.51s/it]
+ 11%|█         | 626/5625 [05:07<16:19:32, 11.76s/it]
+                                                     
+{'loss': 0.5603, 'grad_norm': 0.7839292883872986, 'learning_rate': 4.849231551964771e-06, 'epoch': 0.33}
+
+ 11%|█         | 626/5625 [05:07<16:19:32, 11.76s/it]
+ 11%|█         | 627/5625 [05:21<17:13:39, 12.41s/it]
+                                                     
+{'loss': 0.6441, 'grad_norm': 0.70268714427948, 'learning_rate': 4.848753635385045e-06, 'epoch': 0.33}
+
+ 11%|█         | 627/5625 [05:21<17:13:39, 12.41s/it]
+ 11%|█         | 628/5625 [05:32<16:56:20, 12.20s/it]
+                                                     
+{'loss': 0.7134, 'grad_norm': 0.9690336585044861, 'learning_rate': 4.848274986162754e-06, 'epoch': 0.33}
+
+ 11%|█         | 628/5625 [05:32<16:56:20, 12.20s/it]
+ 11%|█         | 629/5625 [05:47<17:53:57, 12.90s/it]
+                                                     
+{'loss': 0.593, 'grad_norm': 0.7783337235450745, 'learning_rate': 4.847795604447204e-06, 'epoch': 0.34}
+
+ 11%|█         | 629/5625 [05:47<17:53:57, 12.90s/it]
+ 11%|█         | 630/5625 [05:59<17:46:35, 12.81s/it]
+                                                     
+{'loss': 0.5883, 'grad_norm': 0.7585436105728149, 'learning_rate': 4.847315490387928e-06, 'epoch': 0.34}
+
+ 11%|█         | 630/5625 [05:59<17:46:35, 12.81s/it]
+ 11%|█         | 631/5625 [06:12<17:44:53, 12.79s/it]
+                                                     
+{'loss': 0.7724, 'grad_norm': 0.9689459204673767, 'learning_rate': 4.846834644134686e-06, 'epoch': 0.34}
+
+ 11%|█         | 631/5625 [06:12<17:44:53, 12.79s/it]
+ 11%|█         | 632/5625 [06:23<17:07:48, 12.35s/it]
+                                                     
+{'loss': 0.575, 'grad_norm': 0.8448641300201416, 'learning_rate': 4.846353065837468e-06, 'epoch': 0.34}
+
+ 11%|█         | 632/5625 [06:23<17:07:48, 12.35s/it]
+ 11%|█▏        | 633/5625 [06:36<17:22:02, 12.52s/it]
+                                                     
+{'loss': 0.7329, 'grad_norm': 0.9039384126663208, 'learning_rate': 4.8458707556464915e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 633/5625 [06:36<17:22:02, 12.52s/it]
+ 11%|█▏        | 634/5625 [06:48<16:57:21, 12.23s/it]
+                                                     
+{'loss': 0.5611, 'grad_norm': 0.9248334765434265, 'learning_rate': 4.845387713712203e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 634/5625 [06:48<16:57:21, 12.23s/it]
+ 11%|█▏        | 635/5625 [06:59<16:18:33, 11.77s/it]
+                                                     
+{'loss': 0.5786, 'grad_norm': 0.8746172785758972, 'learning_rate': 4.844903940185277e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 635/5625 [06:59<16:18:33, 11.77s/it]
+ 11%|█▏        | 636/5625 [07:14<17:44:00, 12.80s/it]
+                                                     
+{'loss': 0.6692, 'grad_norm': 0.7611356973648071, 'learning_rate': 4.844419435216615e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 636/5625 [07:14<17:44:00, 12.80s/it]
+ 11%|█▏        | 637/5625 [07:26<17:19:47, 12.51s/it]
+                                                     
+{'loss': 0.6707, 'grad_norm': 0.9686862230300903, 'learning_rate': 4.843934198957351e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 637/5625 [07:26<17:19:47, 12.51s/it]
+ 11%|█▏        | 638/5625 [07:38<17:21:08, 12.53s/it]
+                                                     
+{'loss': 0.6552, 'grad_norm': 0.8562203049659729, 'learning_rate': 4.8434482315588395e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 638/5625 [07:38<17:21:08, 12.53s/it]
+ 11%|█▏        | 639/5625 [07:55<18:59:46, 13.72s/it]vikmuru
+                                                     vikmuru
+{'loss': 0.637, 'grad_norm': 0.6898586750030518, 'learning_rate': 4.84296153317267e-06, 'epoch': 0.34}vikmuru
+vikmuru
+ 11%|█▏        | 639/5625 [07:55<18:59:46, 13.72s/it]vikmuru
+ 11%|█▏        | 640/5625 [08:06<18:08:06, 13.10s/it]vikmuru
+                                                     vikmuru
+{'loss': 0.7019, 'grad_norm': 0.8997495174407959, 'learning_rate': 4.842474103950658e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 640/5625 [08:06<18:08:06, 13.10s/it]
+ 11%|█▏        | 641/5625 [08:18<17:37:28, 12.73s/it]vikmuru
+                                                     vikmuru
+{'loss': 0.5673, 'grad_norm': 0.8589956164360046, 'learning_rate': 4.841985944044845e-06, 'epoch': 0.34}vikmuru
+vikmuru
+ 11%|█▏        | 641/5625 [08:18<17:37:28, 12.73s/it]vikmuru
+ 11%|█▏        | 642/5625 [08:32<17:59:19, 13.00s/it]vikmuru
+                                                     
+{'loss': 0.6838, 'grad_norm': 0.8422202467918396, 'learning_rate': 4.8414970536075026e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 642/5625 [08:32<17:59:19, 13.00s/it]
+ 11%|█▏        | 643/5625 [08:48<19:10:51, 13.86s/it]
+                                                     
+{'loss': 0.6311, 'grad_norm': 0.6911798119544983, 'learning_rate': 4.841007432791129e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 643/5625 [08:48<19:10:51, 13.86s/it]
+ 11%|█▏        | 644/5625 [08:59<18:12:08, 13.16s/it]
+                                                     
+{'loss': 0.5608, 'grad_norm': 0.8302306532859802, 'learning_rate': 4.840517081748451e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 644/5625 [08:59<18:12:08, 13.16s/it]
+ 11%|█▏        | 645/5625 [09:12<17:49:25, 12.88s/it]
+                                                     
+{'loss': 0.6679, 'grad_norm': 0.9126101732254028, 'learning_rate': 4.840026000632423e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 645/5625 [09:12<17:49:25, 12.88s/it]
+ 11%|█▏        | 646/5625 [09:24<17:27:12, 12.62s/it]
+                                                     
+{'loss': 0.6301, 'grad_norm': 0.8496968746185303, 'learning_rate': 4.839534189596228e-06, 'epoch': 0.34}
+
+ 11%|█▏        | 646/5625 [09:24<17:27:12, 12.62s/it]
+ 12%|█▏        | 647/5625 [09:34<16:39:31, 12.05s/it]
+                                                     
+{'loss': 0.5809, 'grad_norm': 0.8972060084342957, 'learning_rate': 4.8390416487932735e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 647/5625 [09:34<16:39:31, 12.05s/it]
+ 12%|█▏        | 648/5625 [09:45<16:16:38, 11.77s/it]
+                                                     
+{'loss': 0.5379, 'grad_norm': 0.8055550456047058, 'learning_rate': 4.8385483783771985e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 648/5625 [09:45<16:16:38, 11.77s/it]
+ 12%|█▏        | 649/5625 [10:01<18:02:18, 13.05s/it]
+                                                     
+{'loss': 0.6376, 'grad_norm': 0.704275369644165, 'learning_rate': 4.838054378501868e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 649/5625 [10:01<18:02:18, 13.05s/it]
+ 12%|█▏        | 650/5625 [10:16<18:30:57, 13.40s/it]
+                                                     
+{'loss': 0.7159, 'grad_norm': 0.8902245163917542, 'learning_rate': 4.837559649321374e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 650/5625 [10:16<18:30:57, 13.40s/it]
+ 12%|█▏        | 651/5625 [10:27<17:51:52, 12.93s/it]
+                                                     
+{'loss': 0.6795, 'grad_norm': 0.8554335832595825, 'learning_rate': 4.837064190990036e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 651/5625 [10:27<17:51:52, 12.93s/it]
+ 12%|█▏        | 652/5625 [10:38<16:58:48, 12.29s/it]
+                                                     
+{'loss': 0.5334, 'grad_norm': 0.8228215575218201, 'learning_rate': 4.836568003662403e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 652/5625 [10:38<16:58:48, 12.29s/it]
+ 12%|█▏        | 653/5625 [10:50<16:40:22, 12.07s/it]
+                                                     
+{'loss': 0.6652, 'grad_norm': 0.9012165665626526, 'learning_rate': 4.8360710874932485e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 653/5625 [10:50<16:40:22, 12.07s/it]
+ 12%|█▏        | 654/5625 [11:04<17:38:55, 12.78s/it]
+                                                     
+{'loss': 0.5659, 'grad_norm': 0.801342785358429, 'learning_rate': 4.835573442637575e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 654/5625 [11:04<17:38:55, 12.78s/it]
+ 12%|█▏        | 655/5625 [11:15<16:40:04, 12.07s/it]
+                                                     
+{'loss': 0.5838, 'grad_norm': 0.8761176466941833, 'learning_rate': 4.835075069250613e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 655/5625 [11:15<16:40:04, 12.07s/it]
+ 12%|█▏        | 656/5625 [11:25<16:04:40, 11.65s/it]
+                                                     
+{'loss': 0.6628, 'grad_norm': 0.9685138463973999, 'learning_rate': 4.834575967487817e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 656/5625 [11:25<16:04:40, 11.65s/it]
+ 12%|█▏        | 657/5625 [11:36<15:47:16, 11.44s/it]
+                                                     
+{'loss': 0.6463, 'grad_norm': 0.880159318447113, 'learning_rate': 4.834076137504873e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 657/5625 [11:36<15:47:16, 11.44s/it]
+ 12%|█▏        | 658/5625 [11:49<16:08:41, 11.70s/it]
+                                                     
+{'loss': 0.6878, 'grad_norm': 0.938261866569519, 'learning_rate': 4.833575579457691e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 658/5625 [11:49<16:08:41, 11.70s/it]
+ 12%|█▏        | 659/5625 [12:00<16:02:40, 11.63s/it]
+                                                     
+{'loss': 0.6656, 'grad_norm': 0.9174836874008179, 'learning_rate': 4.83307429350241e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 659/5625 [12:00<16:02:40, 11.63s/it]
+ 12%|█▏        | 660/5625 [12:09<14:50:07, 10.76s/it]
+                                                     
+{'loss': 0.5864, 'grad_norm': 1.0584405660629272, 'learning_rate': 4.8325722797953945e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 660/5625 [12:09<14:50:07, 10.76s/it]
+ 12%|█▏        | 661/5625 [12:19<14:48:54, 10.74s/it]
+                                                     
+{'loss': 0.5835, 'grad_norm': 0.8429146409034729, 'learning_rate': 4.832069538493237e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 661/5625 [12:19<14:48:54, 10.74s/it]
+ 12%|█▏        | 662/5625 [12:33<16:07:55, 11.70s/it]
+                                                     
+{'loss': 0.6246, 'grad_norm': 0.7261625528335571, 'learning_rate': 4.831566069752757e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 662/5625 [12:33<16:07:55, 11.70s/it]
+ 12%|█▏        | 663/5625 [12:45<16:09:47, 11.73s/it]
+                                                     
+{'loss': 0.6758, 'grad_norm': 0.925128698348999, 'learning_rate': 4.831061873730999e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 663/5625 [12:45<16:09:47, 11.73s/it]
+ 12%|█▏        | 664/5625 [12:57<16:23:20, 11.89s/it]
+                                                     
+{'loss': 0.773, 'grad_norm': 1.041845440864563, 'learning_rate': 4.830556950585239e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 664/5625 [12:57<16:23:20, 11.89s/it]
+ 12%|█▏        | 665/5625 [13:11<17:04:47, 12.40s/it]
+                                                     
+{'loss': 0.7205, 'grad_norm': 0.8359512090682983, 'learning_rate': 4.8300513004729735e-06, 'epoch': 0.35}
+
+ 12%|█▏        | 665/5625 [13:11<17:04:47, 12.40s/it]
+ 12%|█▏        | 666/5625 [13:24<17:20:38, 12.59s/it]
+                                                     
+{'loss': 0.6814, 'grad_norm': 0.7952083945274353, 'learning_rate': 4.8295449235519314e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 666/5625 [13:24<17:20:38, 12.59s/it]
+ 12%|█▏        | 667/5625 [13:38<18:04:45, 13.13s/it]
+                                                     
+{'loss': 0.6634, 'grad_norm': 0.8266556859016418, 'learning_rate': 4.829037819980065e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 667/5625 [13:38<18:04:45, 13.13s/it]
+ 12%|█▏        | 668/5625 [13:50<17:30:22, 12.71s/it]
+                                                     
+{'loss': 0.6108, 'grad_norm': 0.8156363368034363, 'learning_rate': 4.828529989915554e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 668/5625 [13:50<17:30:22, 12.71s/it]
+ 12%|█▏        | 669/5625 [14:01<16:51:08, 12.24s/it]
+                                                     
+{'loss': 0.7085, 'grad_norm': 0.9989843964576721, 'learning_rate': 4.8280214335168065e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 669/5625 [14:01<16:51:08, 12.24s/it]
+ 12%|█▏        | 670/5625 [14:12<16:11:05, 11.76s/it]
+                                                     
+{'loss': 0.5823, 'grad_norm': 0.881354570388794, 'learning_rate': 4.827512150942454e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 670/5625 [14:12<16:11:05, 11.76s/it]
+ 12%|█▏        | 671/5625 [14:24<16:22:25, 11.90s/it]
+                                                     
+{'loss': 0.7667, 'grad_norm': 1.0675599575042725, 'learning_rate': 4.827002142351356e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 671/5625 [14:24<16:22:25, 11.90s/it]
+ 12%|█▏        | 672/5625 [14:35<15:56:56, 11.59s/it]
+                                                     
+{'loss': 0.6825, 'grad_norm': 1.0713143348693848, 'learning_rate': 4.826491407902599e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 672/5625 [14:35<15:56:56, 11.59s/it]
+ 12%|█▏        | 673/5625 [14:46<15:41:48, 11.41s/it]
+                                                     
+{'loss': 0.5143, 'grad_norm': 0.8169400691986084, 'learning_rate': 4.825979947755496e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 673/5625 [14:46<15:41:48, 11.41s/it]
+ 12%|█▏        | 674/5625 [14:57<15:41:05, 11.40s/it]
+                                                     
+{'loss': 0.5349, 'grad_norm': 0.836151659488678, 'learning_rate': 4.825467762069586e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 674/5625 [14:57<15:41:05, 11.40s/it]
+ 12%|█▏        | 675/5625 [15:10<15:56:19, 11.59s/it]
+                                                     
+{'loss': 0.6361, 'grad_norm': 0.8570613861083984, 'learning_rate': 4.824954851004633e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 675/5625 [15:10<15:56:19, 11.59s/it]
+ 12%|█▏        | 676/5625 [15:23<16:47:08, 12.21s/it]
+                                                     
+{'loss': 0.641, 'grad_norm': 0.8196344375610352, 'learning_rate': 4.824441214720629e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 676/5625 [15:23<16:47:08, 12.21s/it]
+ 12%|█▏        | 677/5625 [15:38<18:02:26, 13.13s/it]
+                                                     
+{'loss': 0.6128, 'grad_norm': 0.811636209487915, 'learning_rate': 4.8239268533777915e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 677/5625 [15:38<18:02:26, 13.13s/it]
+ 12%|█▏        | 678/5625 [15:51<17:36:51, 12.82s/it]
+                                                     
+{'loss': 0.6547, 'grad_norm': 0.8518617153167725, 'learning_rate': 4.823411767136566e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 678/5625 [15:51<17:36:51, 12.82s/it]
+ 12%|█▏        | 679/5625 [16:01<16:34:13, 12.06s/it]
+                                                     
+{'loss': 0.6117, 'grad_norm': 0.9344469308853149, 'learning_rate': 4.8228959561576195e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 679/5625 [16:01<16:34:13, 12.06s/it]
+ 12%|█▏        | 680/5625 [16:11<15:56:34, 11.61s/it]
+                                                     
+{'loss': 0.677, 'grad_norm': 0.9737054705619812, 'learning_rate': 4.822379420601849e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 680/5625 [16:11<15:56:34, 11.61s/it]
+ 12%|█▏        | 681/5625 [16:23<15:59:35, 11.65s/it]
+                                                     
+{'loss': 0.6473, 'grad_norm': 0.9422670006752014, 'learning_rate': 4.821862160630378e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 681/5625 [16:23<15:59:35, 11.65s/it]
+ 12%|█▏        | 682/5625 [16:36<16:38:19, 12.12s/it]
+                                                     
+{'loss': 0.6802, 'grad_norm': 0.8900365829467773, 'learning_rate': 4.821344176404554e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 682/5625 [16:36<16:38:19, 12.12s/it]
+ 12%|█▏        | 683/5625 [16:48<16:22:21, 11.93s/it]
+                                                     
+{'loss': 0.6095, 'grad_norm': 0.9400808215141296, 'learning_rate': 4.820825468085949e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 683/5625 [16:48<16:22:21, 11.93s/it]
+ 12%|█▏        | 684/5625 [17:00<16:25:02, 11.96s/it]
+                                                     
+{'loss': 0.649, 'grad_norm': 0.8670486807823181, 'learning_rate': 4.820306035836365e-06, 'epoch': 0.36}
+
+ 12%|█▏        | 684/5625 [17:00<16:25:02, 11.96s/it]
+ 12%|█▏        | 685/5625 [17:12<16:24:05, 11.95s/it]
+                                                     
+{'loss': 0.718, 'grad_norm': 0.8959972858428955, 'learning_rate': 4.819785879817827e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 685/5625 [17:12<16:24:05, 11.95s/it]
+ 12%|█▏        | 686/5625 [17:23<16:05:38, 11.73s/it]
+                                                     
+{'loss': 0.7109, 'grad_norm': 1.0294241905212402, 'learning_rate': 4.8192650001925855e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 686/5625 [17:23<16:05:38, 11.73s/it]
+ 12%|█▏        | 687/5625 [17:35<16:22:39, 11.94s/it]
+                                                     
+{'loss': 0.7892, 'grad_norm': 0.908699631690979, 'learning_rate': 4.818743397123119e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 687/5625 [17:35<16:22:39, 11.94s/it]
+ 12%|█▏        | 688/5625 [17:48<16:27:51, 12.01s/it]
+                                                     
+{'loss': 0.6575, 'grad_norm': 0.8456758260726929, 'learning_rate': 4.818221070772129e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 688/5625 [17:48<16:27:51, 12.01s/it]
+ 12%|█▏        | 689/5625 [17:59<16:21:30, 11.93s/it]
+                                                     
+{'loss': 0.6907, 'grad_norm': 0.8979417681694031, 'learning_rate': 4.817698021302544e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 689/5625 [17:59<16:21:30, 11.93s/it]
+ 12%|█▏        | 690/5625 [18:12<16:31:48, 12.06s/it]
+                                                     
+{'loss': 0.6756, 'grad_norm': 0.8565605282783508, 'learning_rate': 4.817174248877518e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 690/5625 [18:12<16:31:48, 12.06s/it]
+ 12%|█▏        | 691/5625 [18:24<16:43:49, 12.21s/it]
+                                                     
+{'loss': 0.6, 'grad_norm': 0.8090314865112305, 'learning_rate': 4.816649753660431e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 691/5625 [18:24<16:43:49, 12.21s/it]
+ 12%|█▏        | 692/5625 [18:36<16:20:31, 11.93s/it]
+                                                     
+{'loss': 0.6181, 'grad_norm': 0.9103947877883911, 'learning_rate': 4.8161245358148865e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 692/5625 [18:36<16:20:31, 11.93s/it]
+ 12%|█▏        | 693/5625 [18:47<16:12:10, 11.83s/it]
+                                                     
+{'loss': 0.7404, 'grad_norm': 0.9323105812072754, 'learning_rate': 4.815598595504717e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 693/5625 [18:47<16:12:10, 11.83s/it]
+ 12%|█▏        | 694/5625 [18:59<16:19:25, 11.92s/it]
+                                                     
+{'loss': 0.6418, 'grad_norm': 0.8734045624732971, 'learning_rate': 4.815071932893976e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 694/5625 [18:59<16:19:25, 11.92s/it]
+ 12%|█▏        | 695/5625 [19:11<16:18:37, 11.91s/it]
+                                                     
+{'loss': 0.6855, 'grad_norm': 0.9079225063323975, 'learning_rate': 4.814544548146945e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 695/5625 [19:11<16:18:37, 11.91s/it]
+ 12%|█▏        | 696/5625 [19:23<16:20:56, 11.94s/it]
+                                                     
+{'loss': 0.5929, 'grad_norm': 0.8590084910392761, 'learning_rate': 4.814016441428131e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 696/5625 [19:23<16:20:56, 11.94s/it]
+ 12%|█▏        | 697/5625 [19:35<16:19:39, 11.93s/it]
+                                                     
+{'loss': 0.636, 'grad_norm': 0.8153687119483948, 'learning_rate': 4.813487612902265e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 697/5625 [19:35<16:19:39, 11.93s/it]
+ 12%|█▏        | 698/5625 [19:48<16:48:19, 12.28s/it]
+                                                     
+{'loss': 0.6439, 'grad_norm': 0.7759110927581787, 'learning_rate': 4.812958062734302e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 698/5625 [19:48<16:48:19, 12.28s/it]
+ 12%|█▏        | 699/5625 [19:58<15:57:14, 11.66s/it]
+                                                     
+{'loss': 0.5151, 'grad_norm': 0.9866557717323303, 'learning_rate': 4.812427791089426e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 699/5625 [19:58<15:57:14, 11.66s/it]
+ 12%|█▏        | 700/5625 [20:10<16:01:51, 11.72s/it]
+                                                     
+{'loss': 0.5874, 'grad_norm': 0.805082380771637, 'learning_rate': 4.811896798133042e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 700/5625 [20:10<16:01:51, 11.72s/it][INFO|trainer.py:4074] 2026-10-27 05:51:22,254 >> Saving model checkpoint to saves/qwen25_3b_instruct/vikmuru/checkpoint-700
+[INFO|configuration_utils.py:478] 2026-10-27 05:51:22,275 >> Configuration saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-700/config.json
+[INFO|configuration_utils.py:869] 2026-10-27 05:51:22,282 >> Configuration saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-700/generation_config.json
+[INFO|modeling_utils.py:4180] 2026-10-27 05:51:44,993 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at saves/qwen25_3b_instruct/vikmuru/checkpoint-700/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2393] 2026-10-27 05:51:45,003 >> chat template saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-700/chat_template.jinja
+[INFO|tokenization_utils_base.py:2562] 2026-10-27 05:51:45,009 >> tokenizer config file saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-700/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2571] 2026-10-27 05:51:45,015 >> Special tokens file saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-700/special_tokens_map.json
+/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[2026-10-27 05:51:45,558] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step700 is about to be saved!
+[2026-10-27 05:51:45,573] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: saves/qwen25_3b_instruct/vikmuru/checkpoint-700/global_step700/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2026-10-27 05:51:45,573] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen25_3b_instruct/vikmuru/checkpoint-700/global_step700/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2026-10-27 05:51:45,596] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen25_3b_instruct/vikmuru/checkpoint-700/global_step700/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2026-10-27 05:51:45,597] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen25_3b_instruct/vikmuru/checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2026-10-27 05:53:32,945] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen25_3b_instruct/vikmuru/checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2026-10-27 05:53:32,964] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved saves/qwen25_3b_instruct/vikmuru/checkpoint-700/global_step700/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2026-10-27 05:53:32,968] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step700 is ready now!
+
+ 12%|█▏        | 701/5625 [22:40<72:36:42, 53.09s/it]
+                                                     
+{'loss': 0.5686, 'grad_norm': 0.8204829692840576, 'learning_rate': 4.811365084030784e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 701/5625 [22:40<72:36:42, 53.09s/it]
+ 12%|█▏        | 702/5625 [22:51<55:24:48, 40.52s/it]
+                                                     
+{'loss': 0.6004, 'grad_norm': 0.8936143517494202, 'learning_rate': 4.810832648948505e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 702/5625 [22:51<55:24:48, 40.52s/it]
+ 12%|█▏        | 703/5625 [23:03<43:36:46, 31.90s/it]
+                                                     
+{'loss': 0.6016, 'grad_norm': 0.8520459532737732, 'learning_rate': 4.810299493052289e-06, 'epoch': 0.37}
+
+ 12%|█▏        | 703/5625 [23:03<43:36:46, 31.90s/it]
+ 13%|█▎        | 704/5625 [23:15<35:33:26, 26.01s/it]
+                                                     
+{'loss': 0.5851, 'grad_norm': 0.8696514368057251, 'learning_rate': 4.809765616508442e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 704/5625 [23:15<35:33:26, 26.01s/it]
+ 13%|█▎        | 705/5625 [23:27<29:35:04, 21.65s/it]
+                                                     
+{'loss': 0.6762, 'grad_norm': 0.8976737260818481, 'learning_rate': 4.809231019483497e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 705/5625 [23:27<29:35:04, 21.65s/it]
+ 13%|█▎        | 706/5625 [23:38<25:16:37, 18.50s/it]
+                                                     
+{'loss': 0.5272, 'grad_norm': 0.7947294116020203, 'learning_rate': 4.808695702144206e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 706/5625 [23:38<25:16:37, 18.50s/it]
+ 13%|█▎        | 707/5625 [23:48<22:01:37, 16.12s/it]
+                                                     
+{'loss': 0.5561, 'grad_norm': 0.8739477396011353, 'learning_rate': 4.808159664657553e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 707/5625 [23:48<22:01:37, 16.12s/it]
+ 13%|█▎        | 708/5625 [24:01<20:36:21, 15.09s/it]
+                                                     
+{'loss': 0.6878, 'grad_norm': 0.8981552720069885, 'learning_rate': 4.80762290719074e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 708/5625 [24:01<20:36:21, 15.09s/it]
+ 13%|█▎        | 709/5625 [24:11<18:37:04, 13.63s/it]
+                                                     
+{'loss': 0.5704, 'grad_norm': 0.9132921099662781, 'learning_rate': 4.8070854299112e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 709/5625 [24:11<18:37:04, 13.63s/it]
+ 13%|█▎        | 710/5625 [24:23<17:58:31, 13.17s/it]
+                                                     
+{'loss': 0.6734, 'grad_norm': 0.8973435759544373, 'learning_rate': 4.806547232986586e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 710/5625 [24:23<17:58:31, 13.17s/it]
+ 13%|█▎        | 711/5625 [24:34<16:59:41, 12.45s/it]
+                                                     
+{'loss': 0.6849, 'grad_norm': 0.9230929017066956, 'learning_rate': 4.806008316584776e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 711/5625 [24:34<16:59:41, 12.45s/it]
+ 13%|█▎        | 712/5625 [24:46<16:56:28, 12.41s/it]
+                                                     
+{'loss': 0.7049, 'grad_norm': 0.8959926962852478, 'learning_rate': 4.805468680873874e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 712/5625 [24:46<16:56:28, 12.41s/it]
+ 13%|█▎        | 713/5625 [24:58<16:33:31, 12.14s/it]
+                                                     
+{'loss': 0.7135, 'grad_norm': 0.932790219783783, 'learning_rate': 4.804928326022208e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 713/5625 [24:58<16:33:31, 12.14s/it]
+ 13%|█▎        | 714/5625 [25:08<15:45:59, 11.56s/it]
+                                                     
+{'loss': 0.6408, 'grad_norm': 0.9914366006851196, 'learning_rate': 4.804387252198329e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 714/5625 [25:08<15:45:59, 11.56s/it]
+ 13%|█▎        | 715/5625 [25:19<15:20:35, 11.25s/it]
+                                                     
+{'loss': 0.5935, 'grad_norm': 0.9504574537277222, 'learning_rate': 4.803845459571014e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 715/5625 [25:19<15:20:35, 11.25s/it]
+ 13%|█▎        | 716/5625 [25:30<15:22:13, 11.27s/it]
+                                                     
+{'loss': 0.6544, 'grad_norm': 0.8934243321418762, 'learning_rate': 4.803302948309264e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 716/5625 [25:30<15:22:13, 11.27s/it]
+ 13%|█▎        | 717/5625 [25:41<15:11:58, 11.15s/it]
+                                                     
+{'loss': 0.6671, 'grad_norm': 0.9121474027633667, 'learning_rate': 4.802759718582302e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 717/5625 [25:41<15:11:58, 11.15s/it]
+ 13%|█▎        | 718/5625 [25:54<16:10:29, 11.87s/it]
+                                                     
+{'loss': 0.7118, 'grad_norm': 0.8922905325889587, 'learning_rate': 4.802215770559578e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 718/5625 [25:54<16:10:29, 11.87s/it]
+ 13%|█▎        | 719/5625 [26:12<18:23:55, 13.50s/it]
+                                                     
+{'loss': 0.6136, 'grad_norm': 0.7014329433441162, 'learning_rate': 4.801671104410763e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 719/5625 [26:12<18:23:55, 13.50s/it]
+ 13%|█▎        | 720/5625 [26:25<18:28:29, 13.56s/it]
+                                                     
+{'loss': 0.681, 'grad_norm': 0.8231591582298279, 'learning_rate': 4.801125720305756e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 720/5625 [26:25<18:28:29, 13.56s/it]
+ 13%|█▎        | 721/5625 [26:37<17:30:31, 12.85s/it]
+                                                     
+{'loss': 0.7104, 'grad_norm': 1.073318600654602, 'learning_rate': 4.800579618414677e-06, 'epoch': 0.38}
+
+ 13%|█▎        | 721/5625 [26:37<17:30:31, 12.85s/it]
+ 13%|█▎        | 722/5625 [26:47<16:35:16, 12.18s/it]
+                                                     
+{'loss': 0.6289, 'grad_norm': 0.9131246209144592, 'learning_rate': 4.800032798907869e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 722/5625 [26:47<16:35:16, 12.18s/it]
+ 13%|█▎        | 723/5625 [27:01<17:05:52, 12.56s/it]
+                                                     
+{'loss': 0.6936, 'grad_norm': 0.8412240147590637, 'learning_rate': 4.799485261955901e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 723/5625 [27:01<17:05:52, 12.56s/it]
+ 13%|█▎        | 724/5625 [27:12<16:39:07, 12.23s/it]
+                                                     
+{'loss': 0.6166, 'grad_norm': 0.9634431004524231, 'learning_rate': 4.798937007729568e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 724/5625 [27:12<16:39:07, 12.23s/it]
+ 13%|█▎        | 725/5625 [27:26<17:21:17, 12.75s/it]
+                                                     
+{'loss': 0.7355, 'grad_norm': 0.8271263241767883, 'learning_rate': 4.798388036399883e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 725/5625 [27:26<17:21:17, 12.75s/it]
+ 13%|█▎        | 726/5625 [27:37<16:45:35, 12.32s/it]
+                                                     
+{'loss': 0.7178, 'grad_norm': 0.9154704213142395, 'learning_rate': 4.7978383481380865e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 726/5625 [27:37<16:45:35, 12.32s/it]
+ 13%|█▎        | 727/5625 [27:54<18:38:09, 13.70s/it]
+                                                     
+{'loss': 0.5649, 'grad_norm': 0.6952008605003357, 'learning_rate': 4.797287943115642e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 727/5625 [27:54<18:38:09, 13.70s/it]
+ 13%|█▎        | 728/5625 [28:06<17:59:41, 13.23s/it]
+                                                     
+{'loss': 0.6262, 'grad_norm': 0.8555086851119995, 'learning_rate': 4.796736821504235e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 728/5625 [28:06<17:59:41, 13.23s/it]
+ 13%|█▎        | 729/5625 [28:18<17:10:45, 12.63s/it]
+                                                     
+{'loss': 0.6414, 'grad_norm': 1.0666420459747314, 'learning_rate': 4.796184983475779e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 729/5625 [28:18<17:10:45, 12.63s/it]
+ 13%|█▎        | 730/5625 [28:29<16:36:52, 12.22s/it]
+                                                     
+{'loss': 0.6439, 'grad_norm': 0.9359602928161621, 'learning_rate': 4.7956324292024045e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 730/5625 [28:29<16:36:52, 12.22s/it]
+ 13%|█▎        | 731/5625 [28:40<16:12:38, 11.92s/it]
+                                                     
+{'loss': 0.653, 'grad_norm': 0.9186165928840637, 'learning_rate': 4.795079158856471e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 731/5625 [28:40<16:12:38, 11.92s/it]
+ 13%|█▎        | 732/5625 [28:51<15:53:21, 11.69s/it]
+                                                     
+{'loss': 0.5591, 'grad_norm': 0.8002848625183105, 'learning_rate': 4.794525172610558e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 732/5625 [28:51<15:53:21, 11.69s/it]
+ 13%|█▎        | 733/5625 [29:05<16:35:30, 12.21s/it]
+                                                     
+{'loss': 0.7312, 'grad_norm': 0.8300294280052185, 'learning_rate': 4.793970470637469e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 733/5625 [29:05<16:35:30, 12.21s/it]
+ 13%|█▎        | 734/5625 [29:21<18:10:07, 13.37s/it]
+                                                     
+{'loss': 0.6826, 'grad_norm': 0.7167679071426392, 'learning_rate': 4.793415053110233e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 734/5625 [29:21<18:10:07, 13.37s/it]
+ 13%|█▎        | 735/5625 [29:31<17:00:10, 12.52s/it]
+                                                     
+{'loss': 0.6928, 'grad_norm': 0.9539762139320374, 'learning_rate': 4.792858920202099e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 735/5625 [29:31<17:00:10, 12.52s/it]
+ 13%|█▎        | 736/5625 [29:46<18:05:24, 13.32s/it]
+                                                     
+{'loss': 0.6622, 'grad_norm': 0.7637293338775635, 'learning_rate': 4.792302072086542e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 736/5625 [29:46<18:05:24, 13.32s/it]
+ 13%|█▎        | 737/5625 [29:59<17:41:41, 13.03s/it]
+                                                     
+{'loss': 0.611, 'grad_norm': 0.8444963097572327, 'learning_rate': 4.791744508937256e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 737/5625 [29:59<17:41:41, 13.03s/it]
+ 13%|█▎        | 738/5625 [30:10<16:50:22, 12.40s/it]
+                                                     
+{'loss': 0.5753, 'grad_norm': 0.8369399905204773, 'learning_rate': 4.791186230928163e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 738/5625 [30:10<16:50:22, 12.40s/it]
+ 13%|█▎        | 739/5625 [30:23<17:13:35, 12.69s/it]
+                                                     
+{'loss': 0.671, 'grad_norm': 0.7900577187538147, 'learning_rate': 4.790627238233405e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 739/5625 [30:23<17:13:35, 12.69s/it]
+ 13%|█▎        | 740/5625 [30:34<16:35:15, 12.22s/it]
+                                                     
+{'loss': 0.5347, 'grad_norm': 0.8542333841323853, 'learning_rate': 4.790067531027347e-06, 'epoch': 0.39}
+
+ 13%|█▎        | 740/5625 [30:34<16:35:15, 12.22s/it]
+ 13%|█▎        | 741/5625 [30:47<16:35:05, 12.22s/it]
+                                                     
+{'loss': 0.6749, 'grad_norm': 0.8201404809951782, 'learning_rate': 4.789507109484579e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 741/5625 [30:47<16:35:05, 12.22s/it]
+ 13%|█▎        | 742/5625 [31:01<17:34:53, 12.96s/it]
+                                                     
+{'loss': 0.6026, 'grad_norm': 0.7447367906570435, 'learning_rate': 4.7889459737799105e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 742/5625 [31:01<17:34:53, 12.96s/it]
+ 13%|█▎        | 743/5625 [31:14<17:18:53, 12.77s/it]
+                                                     
+{'loss': 0.7154, 'grad_norm': 0.8345006108283997, 'learning_rate': 4.788384124088376e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 743/5625 [31:14<17:18:53, 12.77s/it]
+ 13%|█▎        | 744/5625 [31:26<16:59:59, 12.54s/it]
+                                                     
+{'loss': 0.541, 'grad_norm': 0.7396058440208435, 'learning_rate': 4.787821560585234e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 744/5625 [31:26<16:59:59, 12.54s/it]
+ 13%|█▎        | 745/5625 [31:37<16:40:34, 12.30s/it]
+                                                     
+{'loss': 0.5974, 'grad_norm': 0.813258171081543, 'learning_rate': 4.787258283445962e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 745/5625 [31:37<16:40:34, 12.30s/it]
+ 13%|█▎        | 746/5625 [31:50<16:51:34, 12.44s/it]
+                                                     
+{'loss': 0.7049, 'grad_norm': 0.9055161476135254, 'learning_rate': 4.7866942928462625e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 746/5625 [31:50<16:51:34, 12.44s/it]
+ 13%|█▎        | 747/5625 [32:02<16:33:27, 12.22s/it]
+                                                     
+{'loss': 0.7602, 'grad_norm': 0.9227297306060791, 'learning_rate': 4.786129588962061e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 747/5625 [32:02<16:33:27, 12.22s/it]
+ 13%|█▎        | 748/5625 [32:16<17:23:21, 12.84s/it]
+                                                     
+{'loss': 0.5806, 'grad_norm': 0.7221547365188599, 'learning_rate': 4.785564171969503e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 748/5625 [32:16<17:23:21, 12.84s/it]
+ 13%|█▎        | 749/5625 [32:27<16:49:48, 12.43s/it]
+                                                     
+{'loss': 0.6712, 'grad_norm': 0.8893844485282898, 'learning_rate': 4.784998042044959e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 749/5625 [32:27<16:49:48, 12.43s/it]
+ 13%|█▎        | 750/5625 [32:39<16:36:32, 12.27s/it]
+                                                     
+{'loss': 0.5983, 'grad_norm': 0.8094778656959534, 'learning_rate': 4.784431199365021e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 750/5625 [32:39<16:36:32, 12.27s/it]
+ 13%|█▎        | 751/5625 [32:53<16:57:50, 12.53s/it]
+                                                     
+{'loss': 0.6717, 'grad_norm': 0.7983667254447937, 'learning_rate': 4.783863644106502e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 751/5625 [32:53<16:57:50, 12.53s/it]
+ 13%|█▎        | 752/5625 [33:06<17:22:46, 12.84s/it]
+                                                     
+{'loss': 0.6542, 'grad_norm': 0.7862557172775269, 'learning_rate': 4.78329537644644e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 752/5625 [33:06<17:22:46, 12.84s/it]
+ 13%|█▎        | 753/5625 [33:16<16:11:12, 11.96s/it]
+                                                     
+{'loss': 0.6539, 'grad_norm': 1.0006104707717896, 'learning_rate': 4.782726396562095e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 753/5625 [33:16<16:11:12, 11.96s/it]
+ 13%|█▎        | 754/5625 [33:29<16:31:23, 12.21s/it]
+                                                     
+{'loss': 0.6023, 'grad_norm': 0.7922965288162231, 'learning_rate': 4.782156704630944e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 754/5625 [33:29<16:31:23, 12.21s/it]
+ 13%|█▎        | 755/5625 [33:39<15:51:55, 11.73s/it]
+                                                     
+{'loss': 0.5836, 'grad_norm': 0.876048743724823, 'learning_rate': 4.781586300830693e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 755/5625 [33:39<15:51:55, 11.73s/it]
+ 13%|█▎        | 756/5625 [33:51<15:45:24, 11.65s/it]
+                                                     
+{'loss': 0.6348, 'grad_norm': 0.8795645236968994, 'learning_rate': 4.781015185339266e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 756/5625 [33:51<15:45:24, 11.65s/it]
+ 13%|█▎        | 757/5625 [34:04<16:18:06, 12.06s/it]
+                                                     
+{'loss': 0.6811, 'grad_norm': 0.8312284350395203, 'learning_rate': 4.78044335833481e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 757/5625 [34:04<16:18:06, 12.06s/it]
+ 13%|█▎        | 758/5625 [34:18<17:00:43, 12.58s/it]
+                                                     
+{'loss': 0.6219, 'grad_norm': 0.7821013331413269, 'learning_rate': 4.779870819995695e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 758/5625 [34:18<17:00:43, 12.58s/it]
+ 13%|█▎        | 759/5625 [34:29<16:40:30, 12.34s/it]
+                                                     
+{'loss': 0.6073, 'grad_norm': 0.8455510139465332, 'learning_rate': 4.77929757050051e-06, 'epoch': 0.4}
+
+ 13%|█▎        | 759/5625 [34:29<16:40:30, 12.34s/it]
+ 14%|█▎        | 760/5625 [34:40<15:52:43, 11.75s/it]
+                                                     
+{'loss': 0.6416, 'grad_norm': 0.9645624756813049, 'learning_rate': 4.7787236100280685e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 760/5625 [34:40<15:52:43, 11.75s/it]
+ 14%|█▎        | 761/5625 [34:51<15:40:43, 11.60s/it]
+                                                     
+{'loss': 0.6543, 'grad_norm': 0.8645448088645935, 'learning_rate': 4.778148938757406e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 761/5625 [34:51<15:40:43, 11.60s/it]
+ 14%|█▎        | 762/5625 [35:03<15:55:45, 11.79s/it]
+                                                     
+{'loss': 0.656, 'grad_norm': 0.921362042427063, 'learning_rate': 4.777573556867778e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 762/5625 [35:03<15:55:45, 11.79s/it]
+ 14%|█▎        | 763/5625 [35:13<15:14:16, 11.28s/it]
+                                                     
+{'loss': 0.6146, 'grad_norm': 1.0751458406448364, 'learning_rate': 4.7769974645386616e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 763/5625 [35:13<15:14:16, 11.28s/it]
+ 14%|█▎        | 764/5625 [35:24<15:05:25, 11.18s/it]
+                                                     
+{'loss': 0.5953, 'grad_norm': 0.9848330020904541, 'learning_rate': 4.776420661949758e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 764/5625 [35:24<15:05:25, 11.18s/it]
+ 14%|█▎        | 765/5625 [35:36<15:23:34, 11.40s/it]
+                                                     
+{'loss': 0.7021, 'grad_norm': 0.9656726717948914, 'learning_rate': 4.775843149280986e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 765/5625 [35:36<15:23:34, 11.40s/it]
+ 14%|█▎        | 766/5625 [35:46<14:45:49, 10.94s/it]
+                                                     
+{'loss': 0.6802, 'grad_norm': 1.1093934774398804, 'learning_rate': 4.775264926712489e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 766/5625 [35:46<14:45:49, 10.94s/it]
+ 14%|█▎        | 767/5625 [35:59<15:37:26, 11.58s/it]
+                                                     
+{'loss': 0.6699, 'grad_norm': 0.7901771068572998, 'learning_rate': 4.774685994424633e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 767/5625 [35:59<15:37:26, 11.58s/it]
+ 14%|█▎        | 768/5625 [36:10<15:24:53, 11.43s/it]
+                                                     
+{'loss': 0.6185, 'grad_norm': 0.9162468314170837, 'learning_rate': 4.774106352598e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 768/5625 [36:10<15:24:53, 11.43s/it]
+ 14%|█▎        | 769/5625 [36:21<15:05:17, 11.19s/it]
+                                                     
+{'loss': 0.6098, 'grad_norm': 0.8629834055900574, 'learning_rate': 4.7735260014133986e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 769/5625 [36:21<15:05:17, 11.19s/it]
+ 14%|█▎        | 770/5625 [36:35<16:18:15, 12.09s/it]
+                                                     
+{'loss': 0.6778, 'grad_norm': 0.8070093989372253, 'learning_rate': 4.772944941051856e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 770/5625 [36:35<16:18:15, 12.09s/it]
+ 14%|█▎        | 771/5625 [36:47<16:08:01, 11.97s/it]
+                                                     
+{'loss': 0.64, 'grad_norm': 0.9365231394767761, 'learning_rate': 4.772363171694623e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 771/5625 [36:47<16:08:01, 11.97s/it]
+ 14%|█▎        | 772/5625 [36:56<15:13:39, 11.30s/it]
+                                                     
+{'loss': 0.56, 'grad_norm': 0.9389304518699646, 'learning_rate': 4.7717806935231665e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 772/5625 [36:56<15:13:39, 11.30s/it]
+ 14%|█▎        | 773/5625 [37:07<14:46:55, 10.97s/it]
+                                                     
+{'loss': 0.6381, 'grad_norm': 1.0149734020233154, 'learning_rate': 4.77119750671918e-06, 'epoch': 0.41}
+
+ 14%|█▎        | 773/5625 [37:07<14:46:55, 10.97s/it]
+ 14%|█▍        | 774/5625 [37:18<14:44:01, 10.93s/it]
+                                                     
+{'loss': 0.7101, 'grad_norm': 0.99970942735672, 'learning_rate': 4.770613611464577e-06, 'epoch': 0.41}
+
+ 14%|█▍        | 774/5625 [37:18<14:44:01, 10.93s/it]
+ 14%|█▍        | 775/5625 [37:30<15:11:19, 11.27s/it]
+                                                     
+{'loss': 0.6549, 'grad_norm': 0.9083967804908752, 'learning_rate': 4.77002900794149e-06, 'epoch': 0.41}
+
+ 14%|█▍        | 775/5625 [37:30<15:11:19, 11.27s/it]
+ 14%|█▍        | 776/5625 [37:45<16:48:39, 12.48s/it]
+                                                     
+{'loss': 0.6126, 'grad_norm': 0.7028575539588928, 'learning_rate': 4.769443696332272e-06, 'epoch': 0.41}
+
+ 14%|█▍        | 776/5625 [37:45<16:48:39, 12.48s/it]
+ 14%|█▍        | 777/5625 [37:55<15:56:39, 11.84s/it]
+                                                     
+{'loss': 0.6947, 'grad_norm': 1.0132473707199097, 'learning_rate': 4.7688576768195e-06, 'epoch': 0.41}
+
+ 14%|█▍        | 777/5625 [37:55<15:56:39, 11.84s/it]
+ 14%|█▍        | 778/5625 [38:07<16:03:58, 11.93s/it]
+                                                     
+{'loss': 0.5644, 'grad_norm': 0.8504356145858765, 'learning_rate': 4.768270949585968e-06, 'epoch': 0.41}
+
+ 14%|█▍        | 778/5625 [38:07<16:03:58, 11.93s/it]
+ 14%|█▍        | 779/5625 [38:19<15:46:03, 11.71s/it]
+                                                     
+{'loss': 0.6704, 'grad_norm': 0.8946264386177063, 'learning_rate': 4.767683514814696e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 779/5625 [38:19<15:46:03, 11.71s/it]
+ 14%|█▍        | 780/5625 [38:31<15:53:28, 11.81s/it]
+                                                     
+{'loss': 0.7219, 'grad_norm': 0.8951590061187744, 'learning_rate': 4.767095372688918e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 780/5625 [38:31<15:53:28, 11.81s/it]
+ 14%|█▍        | 781/5625 [38:44<16:21:25, 12.16s/it]
+                                                     
+{'loss': 0.682, 'grad_norm': 0.7809227705001831, 'learning_rate': 4.766506523392095e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 781/5625 [38:44<16:21:25, 12.16s/it]
+ 14%|█▍        | 782/5625 [38:54<15:38:46, 11.63s/it]
+                                                     
+{'loss': 0.604, 'grad_norm': 0.8920671939849854, 'learning_rate': 4.765916967107903e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 782/5625 [38:54<15:38:46, 11.63s/it]
+ 14%|█▍        | 783/5625 [39:06<15:47:05, 11.74s/it]
+                                                     
+{'loss': 0.728, 'grad_norm': 0.913681149482727, 'learning_rate': 4.7653267040202435e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 783/5625 [39:06<15:47:05, 11.74s/it]
+ 14%|█▍        | 784/5625 [39:18<15:42:04, 11.68s/it]
+                                                     
+{'loss': 0.6379, 'grad_norm': 0.8428438901901245, 'learning_rate': 4.764735734313236e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 784/5625 [39:18<15:42:04, 11.68s/it]
+ 14%|█▍        | 785/5625 [39:29<15:31:38, 11.55s/it]
+                                                     
+{'loss': 0.564, 'grad_norm': 0.7820903062820435, 'learning_rate': 4.7641440581712194e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 785/5625 [39:29<15:31:38, 11.55s/it]
+ 14%|█▍        | 786/5625 [39:42<16:07:02, 11.99s/it]
+                                                     
+{'loss': 0.6963, 'grad_norm': 0.8036271333694458, 'learning_rate': 4.763551675778755e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 786/5625 [39:42<16:07:02, 11.99s/it]
+ 14%|█▍        | 787/5625 [39:54<16:18:28, 12.13s/it]
+                                                     
+{'loss': 0.6304, 'grad_norm': 0.8311980962753296, 'learning_rate': 4.762958587320623e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 787/5625 [39:54<16:18:28, 12.13s/it]
+ 14%|█▍        | 788/5625 [40:04<15:24:32, 11.47s/it]
+                                                     
+{'loss': 0.6358, 'grad_norm': 1.0604972839355469, 'learning_rate': 4.762364792981825e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 788/5625 [40:04<15:24:32, 11.47s/it]
+ 14%|█▍        | 789/5625 [40:17<15:57:07, 11.87s/it]
+                                                     
+{'loss': 0.5894, 'grad_norm': 0.7356233596801758, 'learning_rate': 4.761770292947582e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 789/5625 [40:17<15:57:07, 11.87s/it]
+ 14%|█▍        | 790/5625 [40:29<16:02:53, 11.95s/it]
+                                                     
+{'loss': 0.6623, 'grad_norm': 0.8807857036590576, 'learning_rate': 4.761175087403336e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 790/5625 [40:29<16:02:53, 11.95s/it]
+ 14%|█▍        | 791/5625 [40:41<16:10:16, 12.04s/it]
+                                                     
+{'loss': 0.5737, 'grad_norm': 0.8018771409988403, 'learning_rate': 4.760579176534747e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 791/5625 [40:41<16:10:16, 12.04s/it]
+ 14%|█▍        | 792/5625 [40:53<15:56:05, 11.87s/it]
+                                                     
+{'loss': 0.5976, 'grad_norm': 0.851299524307251, 'learning_rate': 4.759982560527698e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 792/5625 [40:53<15:56:05, 11.87s/it]
+ 14%|█▍        | 793/5625 [41:03<15:17:24, 11.39s/it]
+                                                     
+{'loss': 0.5485, 'grad_norm': 0.9463101029396057, 'learning_rate': 4.75938523956829e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 793/5625 [41:03<15:17:24, 11.39s/it]
+ 14%|█▍        | 794/5625 [41:13<14:42:05, 10.96s/it]
+                                                     
+{'loss': 0.5847, 'grad_norm': 1.021566390991211, 'learning_rate': 4.758787213842843e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 794/5625 [41:13<14:42:05, 10.96s/it]
+ 14%|█▍        | 795/5625 [41:24<14:45:46, 11.00s/it]
+                                                     
+{'loss': 0.5721, 'grad_norm': 0.8834940791130066, 'learning_rate': 4.758188483537898e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 795/5625 [41:24<14:45:46, 11.00s/it]
+ 14%|█▍        | 796/5625 [41:36<15:16:51, 11.39s/it]
+                                                     
+{'loss': 0.6396, 'grad_norm': 0.9004572629928589, 'learning_rate': 4.757589048840219e-06, 'epoch': 0.42}
+
+ 14%|█▍        | 796/5625 [41:36<15:16:51, 11.39s/it]
+ 14%|█▍        | 797/5625 [41:46<14:30:29, 10.82s/it]
+                                                     
+{'loss': 0.5062, 'grad_norm': 0.9872048497200012, 'learning_rate': 4.756988909936783e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 797/5625 [41:46<14:30:29, 10.82s/it]
+ 14%|█▍        | 798/5625 [41:56<14:19:04, 10.68s/it]
+                                                     
+{'loss': 0.5571, 'grad_norm': 0.9086710810661316, 'learning_rate': 4.7563880670147925e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 798/5625 [41:56<14:19:04, 10.68s/it]
+ 14%|█▍        | 799/5625 [42:08<14:47:06, 11.03s/it]
+                                                     
+{'loss': 0.5893, 'grad_norm': 0.8236075639724731, 'learning_rate': 4.755786520261666e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 799/5625 [42:08<14:47:06, 11.03s/it]
+ 14%|█▍        | 800/5625 [42:20<15:10:08, 11.32s/it]
+                                                     
+{'loss': 0.554, 'grad_norm': 0.8436235785484314, 'learning_rate': 4.7551842698650445e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 800/5625 [42:20<15:10:08, 11.32s/it][INFO|trainer.py:4074] 2026-10-27 06:13:29,951 >> Saving model checkpoint to saves/qwen25_3b_instruct/vikmuru/checkpoint-800
+[INFO|configuration_utils.py:478] 2026-10-27 06:13:29,968 >> Configuration saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-800/config.json
+[INFO|configuration_utils.py:869] 2026-10-27 06:13:29,977 >> Configuration saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-800/generation_config.json
+[INFO|modeling_utils.py:4180] 2026-10-27 06:13:57,641 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 2 checkpoint shards. You can find where each parameters has been saved in the index located at saves/qwen25_3b_instruct/vikmuru/checkpoint-800/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2393] 2026-10-27 06:13:57,650 >> chat template saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-800/chat_template.jinja
+[INFO|tokenization_utils_base.py:2562] 2026-10-27 06:13:57,658 >> tokenizer config file saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-800/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2571] 2026-10-27 06:13:57,665 >> Special tokens file saved in saves/qwen25_3b_instruct/vikmuru/checkpoint-800/special_tokens_map.json
+/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[2026-10-27 06:13:58,037] [INFO] [logging.py:107:log_dist] [Rank 0] [Torch] Checkpoint global_step800 is about to be saved!
+[2026-10-27 06:13:58,053] [INFO] [logging.py:107:log_dist] [Rank 0] Saving model checkpoint: saves/qwen25_3b_instruct/vikmuru/checkpoint-800/global_step800/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2026-10-27 06:13:58,054] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen25_3b_instruct/vikmuru/checkpoint-800/global_step800/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2026-10-27 06:13:58,076] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen25_3b_instruct/vikmuru/checkpoint-800/global_step800/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2026-10-27 06:13:58,078] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen25_3b_instruct/vikmuru/checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2026-10-27 06:15:59,675] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen25_3b_instruct/vikmuru/checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2026-10-27 06:15:59,704] [INFO] [engine.py:3701:_save_zero_checkpoint] zero checkpoint saved saves/qwen25_3b_instruct/vikmuru/checkpoint-800/global_step800/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2026-10-27 06:15:59,708] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step800 is ready now!
+
+ 14%|█▍        | 801/5625 [45:05<76:46:44, 57.30s/it]
+                                                     
+{'loss': 0.6714, 'grad_norm': 1.0451686382293701, 'learning_rate': 4.754581316012785e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 801/5625 [45:05<76:46:44, 57.30s/it]
+ 14%|█▍        | 802/5625 [45:17<58:35:18, 43.73s/it]
+                                                     
+{'loss': 0.4783, 'grad_norm': 0.7945044636726379, 'learning_rate': 4.753977658892967e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 802/5625 [45:17<58:35:18, 43.73s/it]
+ 14%|█▍        | 803/5625 [45:30<46:11:03, 34.48s/it]
+                                                     
+{'loss': 0.6196, 'grad_norm': 0.8152008056640625, 'learning_rate': 4.753373298693888e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 803/5625 [45:30<46:11:03, 34.48s/it]
+ 14%|█▍        | 804/5625 [45:43<37:35:46, 28.07s/it]
+                                                     
+{'loss': 0.6857, 'grad_norm': 0.8116713762283325, 'learning_rate': 4.752768235604065e-06, 'epoch': 0.43}
+
+ 14%|█▍        | 804/5625 [45:43<37:35:46, 28.07s/it]
+ 14%|█▍        | 806/5625 [46:07<26:25:54, 19.75s/it]E

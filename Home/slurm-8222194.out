@@ -1,0 +1,166 @@
+
+CondaError: Run 'conda init' before 'conda activate'
+
+no change     /apps/common/software/Miniconda3/25.11.1-1/condabin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/conda-env
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/activate
+no change     /apps/common/software/Miniconda3/25.11.1-1/bin/deactivate
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.sh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/fish/conf.d/conda.fish
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/Conda.psm1
+no change     /apps/common/software/Miniconda3/25.11.1-1/shell/condabin/conda-hook.ps1
+no change     /apps/common/software/Miniconda3/25.11.1-1/lib/python3.13/site-packages/xontrib/conda.xsh
+no change     /apps/common/software/Miniconda3/25.11.1-1/etc/profile.d/conda.csh
+no change     /home/vikmuru/.bashrc
+No action taken.
+[2026-10-27 04:14:08,824] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/vikmuru/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+INFO 10-27 04:14:16 [__init__.py:235] Automatically detected platform cuda.
+[INFO|2026-10-27 04:14:22] llamafactory.cli:143 >> Initializing 1 distributed tasks at: 127.0.0.1:39643
+[2026-10-27 04:14:33,186] [INFO] [real_accelerator.py:239:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+Warning: The cache directory for DeepSpeed Triton autotune, /home/vikmuru/.triton/autotune, appears to be on an NFS system. While this is generally acceptable, if you experience slowdowns or hanging when DeepSpeed exits, it is recommended to set the TRITON_CACHE_DIR environment variable to a non-NFS path.
+[2026-10-27 04:14:35,530] [INFO] [comm.py:669:init_distributed] cdb=None
+[2026-10-27 04:14:35,530] [INFO] [comm.py:700:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+[INFO|2026-10-27 04:14:35] llamafactory.hparams.parser:414 >> Process rank: 0, world size: 1, device: cuda:0, distributed training: True, compute dtype: torch.bfloat16
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,728 >> loading file vocab.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/vocab.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,728 >> loading file merges.txt from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/merges.txt
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,729 >> loading file tokenizer.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,729 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,729 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,729 >> loading file tokenizer_config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:35,729 >> loading file chat_template.jinja from cache at None
+[INFO|tokenization_utils_base.py:2336] 2026-10-27 04:14:36,008 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|configuration_utils.py:752] 2026-10-27 04:14:36,272 >> loading configuration file config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/config.json
+[INFO|configuration_utils.py:817] 2026-10-27 04:14:36,275 >> Model config Qwen2Config {
+  "architectures": [
+    "Qwen2ForCausalLM"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 2048,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "layer_types": [
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention",
+    "full_attention"
+  ],
+  "max_position_embeddings": 32768,
+  "max_window_layers": 70,
+  "model_type": "qwen2",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 36,
+  "num_key_value_heads": 2,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": null,
+  "rope_theta": 1000000.0,
+  "sliding_window": null,
+  "tie_word_embeddings": true,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.55.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 151936
+}
+
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,353 >> loading file vocab.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/vocab.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,354 >> loading file merges.txt from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/merges.txt
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,354 >> loading file tokenizer.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,354 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,354 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,354 >> loading file tokenizer_config.json from cache at /home/vikmuru/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2067] 2026-10-27 04:14:36,354 >> loading file chat_template.jinja from cache at None
+[INFO|tokenization_utils_base.py:2336] 2026-10-27 04:14:36,568 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/launcher.py", line 23, in <module>
+[rank0]:     launch()
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/launcher.py", line 19, in launch
+[rank0]:     run_exp()
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/train/tuner.py", line 110, in run_exp
+[rank0]:     _training_function(config={"args": args, "callbacks": callbacks})
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/train/tuner.py", line 72, in _training_function
+[rank0]:     run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/train/sft/workflow.py", line 51, in run_sft
+[rank0]:     dataset_module = get_dataset(template, model_args, data_args, training_args, stage="sft", **tokenizer_module)
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/data/loader.py", line 304, in get_dataset
+[rank0]:     dataset = _get_merged_dataset(data_args.dataset, model_args, data_args, training_args, stage)
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/data/loader.py", line 178, in _get_merged_dataset
+[rank0]:     for dataset_name, dataset_attr in zip(dataset_names, get_dataset_list(dataset_names, data_args.dataset_dir)):
+[rank0]:   File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/data/parser.py", line 126, in get_dataset_list
+[rank0]:     raise ValueError(f"Undefined dataset {name} in {DATA_CONFIG}.")
+[rank0]: ValueError: Undefined dataset advancedkMeans_15k_sampled_cleaned in dataset_info.json.
+[rank0]:[W1027 04:14:37.913725540 ProcessGroupNCCL.cpp:1479] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E1027 04:14:38.315000 763946 site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 763960) of binary: /home/vikmuru/.conda/envs/lf-train-clean/bin/python
+Traceback (most recent call last):
+  File "/home/vikmuru/.conda/envs/lf-train-clean/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in main
+    run(args)
+  File "/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/run.py", line 883, in run
+    elastic_launch(
+  File "/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 270, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/launcher.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-10-27_04:14:38
+  host      : tc-xe003.cm.cluster
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 763960)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+Traceback (most recent call last):
+  File "/home/vikmuru/.conda/envs/lf-train-clean/bin/llamafactory-cli", line 6, in <module>
+    sys.exit(main())
+  File "/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/cli.py", line 130, in main
+    process = subprocess.run(
+  File "/home/vikmuru/.conda/envs/lf-train-clean/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['torchrun', '--nnodes', '1', '--node_rank', '0', '--nproc_per_node', '1', '--master_addr', '127.0.0.1', '--master_port', '39643', '/home/vikmuru/workdir2/Project-Reasoning-SFT-LLM/LLaMA-Factory/src/llamafactory/launcher.py', 'sft_config_advanced.yaml']' returned non-zero exit status 1.
